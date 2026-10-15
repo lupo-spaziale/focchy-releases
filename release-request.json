@@ -1,5 +1,5 @@
 {
-  "sourceRef": "e0c5626ada63527e6babe6697b80814ebc66468d",
+  "sourceRef": "6e1d8785fe20fd41945474f68ef69bf44bf6ec94",
   "versionCode": 25,
   "versionName": "0.12.2",
   "notes": "Box Nido semplificato: rimosse le tendine 'quantità consumata' e 'fonte principale'. Restano luogo, note/menu comunicato e checkbox 'Non ha mangiato il pranzo'. Lo stato del pranzo viene ricavato automaticamente dagli alimenti/grammi registrati; i vecchi valori nascosti di fonte nido non influenzano più la cena o i micronutrienti.",
