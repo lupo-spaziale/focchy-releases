@@ -1,7 +1,7 @@
 {
-  "sourceRef": "445a490b19d4c8bd01605b9b1ea59063adcc9a8c",
-  "versionCode": 19,
-  "versionName": "0.10.0",
-  "notes": "Nuovo motore cena: ferro e zinco condizionano direttamente la proposta insieme a varietà e proteine; i mg vengono mostrati solo quando verificati. Corretto peso storico, doppio conteggio nido, età degli avvisi e struttura allergeni/soffocamento. Aggiunta dashboard qualità settimanale.",
+  "sourceRef": "35367ff70791e0188ce7b1290e4d8b2123ba2190",
+  "versionCode": 20,
+  "versionName": "0.10.1",
+  "notes": "Hotfix grafico Android WebView: corretta la card Cena suggerita che poteva mostrare un grande spazio bianco e testo parzialmente non ridisegnato. Nessuna modifica alle logiche nutrizionali.",
   "mandatory": false
 }
