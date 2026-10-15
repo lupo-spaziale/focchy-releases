@@ -1,7 +1,7 @@
 {
-  "sourceRef": "bebaf395075e541ae50cb6577b7644586091b06e",
-  "versionCode": 17,
-  "versionName": "0.9.3",
-  "notes": "Updater interno: Focchy scarica l'APK nell'area privata dell'app, verifica SHA-256, package, versionCode e firma, mostra l'avanzamento e apre direttamente la conferma di installazione Android. Da questa versione non serve più il browser per gli aggiornamenti successivi.",
+  "sourceRef": "d9f51cd74bf3ad3fed235ae572528f009972bbb0",
+  "versionCode": 18,
+  "versionName": "0.9.4",
+  "notes": "Versione di prova updater in-app: nessuna modifica funzionale. Serve esclusivamente a verificare download interno, controlli di sicurezza e passaggio all'installer Android.",
   "mandatory": false
 }
