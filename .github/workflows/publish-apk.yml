@@ -1,0 +1,103 @@
+name: Publish Focchy APK
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - release-request.json
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: focchy-release
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout release repository
+        uses: actions/checkout@v4
+        with:
+          path: release
+
+      - name: Read release request
+        id: req
+        shell: bash
+        run: |
+          cd release
+          echo "source_ref=$(jq -r '.sourceRef' release-request.json)" >> "$GITHUB_OUTPUT"
+          echo "version_code=$(jq -r '.versionCode' release-request.json)" >> "$GITHUB_OUTPUT"
+          echo "version_name=$(jq -r '.versionName' release-request.json)" >> "$GITHUB_OUTPUT"
+          echo "mandatory=$(jq -r '.mandatory // false' release-request.json)" >> "$GITHUB_OUTPUT"
+          {
+            echo 'notes<<EOF'
+            jq -r '.notes // ""' release-request.json
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Checkout private Focchy source
+        uses: actions/checkout@v4
+        with:
+          repository: lupo-spaziale/ottavia-pasti
+          ref: ${{ steps.req.outputs.source_ref }}
+          ssh-key: ${{ secrets.FOCCHY_SOURCE_SSH_KEY }}
+          path: source
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install Android SDK packages
+        shell: bash
+        run: |
+          SDKMANAGER="$(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager | head -n 1)"
+          test -x "$SDKMANAGER"
+          yes | "$SDKMANAGER" --licenses >/dev/null || true
+          "$SDKMANAGER" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.10.2'
+
+      - name: Verify requested version
+        shell: bash
+        run: |
+          grep -q "versionCode ${{ steps.req.outputs.version_code }}" source/app/build.gradle
+          grep -q "versionName '${{ steps.req.outputs.version_name }}'" source/app/build.gradle
+          grep -q "applicationId 'com.aniellopassariello.focchy'" source/app/build.gradle
+
+      - name: Build signed APK
+        working-directory: source
+        run: gradle :app:assembleDebug --stacktrace
+
+      - name: Publish APK and metadata
+        shell: bash
+        env:
+          VERSION_CODE: ${{ steps.req.outputs.version_code }}
+          VERSION_NAME: ${{ steps.req.outputs.version_name }}
+          NOTES: ${{ steps.req.outputs.notes }}
+          MANDATORY: ${{ steps.req.outputs.mandatory }}
+          SOURCE_REF: ${{ steps.req.outputs.source_ref }}
+        run: |
+          cp source/app/build/outputs/apk/debug/app-debug.apk release/Focchy.apk
+          SHA256="$(sha256sum release/Focchy.apk | awk '{print $1}')"
+          cd release
+          jq -n             --argjson versionCode "$VERSION_CODE"             --arg versionName "$VERSION_NAME"             --arg downloadUrl "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk"             --arg sha256 "$SHA256"             --arg notes "$NOTES"             --argjson mandatory "$MANDATORY"             --arg sourceRef "$SOURCE_REF"             '{
+              versionCode:$versionCode,
+              versionName:$versionName,
+              downloadUrl:$downloadUrl,
+              sha256:$sha256,
+              notes:$notes,
+              mandatory:$mandatory,
+              sourceRef:$sourceRef,
+              publishedAt:(now|todateiso8601)
+            }' > latest.json
+          git config user.name "Focchy Release Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add Focchy.apk latest.json
+          git commit -m "Pubblica Focchy v$VERSION_NAME ($VERSION_CODE)" || exit 0
+          git push
