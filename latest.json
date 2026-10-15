@@ -1,10 +1,10 @@
 {
-  "versionCode": 18,
-  "versionName": "0.9.4",
+  "versionCode": 19,
+  "versionName": "0.10.0",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "0878df44fa6e414d3dd3c61c6b52ec53f076c1621d685a24ca72f37d1146efd5",
-  "notes": "Versione di prova updater in-app: nessuna modifica funzionale. Serve esclusivamente a verificare download interno, controlli di sicurezza e passaggio all'installer Android.",
+  "sha256": "f5db30590ca2ab5289b3b361ed8856247e1d02667f371b5f2c10dc75e9461c03",
+  "notes": "Nuovo motore cena: ferro e zinco condizionano direttamente la proposta insieme a varietà e proteine; i mg vengono mostrati solo quando verificati. Corretto peso storico, doppio conteggio nido, età degli avvisi e struttura allergeni/soffocamento. Aggiunta dashboard qualità settimanale.",
   "mandatory": false,
-  "sourceRef": "d9f51cd74bf3ad3fed235ae572528f009972bbb0",
-  "publishedAt": "2026-10-15T10:43:00Z"
+  "sourceRef": "445a490b19d4c8bd01605b9b1ea59063adcc9a8c",
+  "publishedAt": "2026-10-15T12:30:55Z"
 }
