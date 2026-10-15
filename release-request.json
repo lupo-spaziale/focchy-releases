@@ -1,5 +1,5 @@
 {
-  "sourceRef": "5039203f3946f13a5d58f7c431ade567772f9e89",
+  "sourceRef": "445a490b19d4c8bd01605b9b1ea59063adcc9a8c",
   "versionCode": 19,
   "versionName": "0.10.0",
   "notes": "Nuovo motore cena: ferro e zinco condizionano direttamente la proposta insieme a varietà e proteine; i mg vengono mostrati solo quando verificati. Corretto peso storico, doppio conteggio nido, età degli avvisi e struttura allergeni/soffocamento. Aggiunta dashboard qualità settimanale.",
