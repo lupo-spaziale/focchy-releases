@@ -1,10 +1,10 @@
 {
-  "versionCode": 17,
-  "versionName": "0.9.3",
+  "versionCode": 18,
+  "versionName": "0.9.4",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "760a0ab12fd9503b921b0e6e3db7422a3cfad028b69401a8e7b2787c59ac39c6",
-  "notes": "Updater interno: Focchy scarica l'APK nell'area privata dell'app, verifica SHA-256, package, versionCode e firma, mostra l'avanzamento e apre direttamente la conferma di installazione Android. Da questa versione non serve più il browser per gli aggiornamenti successivi.",
+  "sha256": "0878df44fa6e414d3dd3c61c6b52ec53f076c1621d685a24ca72f37d1146efd5",
+  "notes": "Versione di prova updater in-app: nessuna modifica funzionale. Serve esclusivamente a verificare download interno, controlli di sicurezza e passaggio all'installer Android.",
   "mandatory": false,
-  "sourceRef": "bebaf395075e541ae50cb6577b7644586091b06e",
-  "publishedAt": "2026-10-15T10:39:39Z"
+  "sourceRef": "d9f51cd74bf3ad3fed235ae572528f009972bbb0",
+  "publishedAt": "2026-10-15T10:43:00Z"
 }
