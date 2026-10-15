@@ -1,10 +1,10 @@
 {
-  "versionCode": 16,
-  "versionName": "0.9.2",
+  "versionCode": 17,
+  "versionName": "0.9.3",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "5ab20967bb80c9d09b66997cfd8fa739d334f622a69b33cca53b59a71d8439bf",
-  "notes": "Corretto il flusso famiglia: creazione atomica di famiglia, proprietario e profilo bambino; aggiunto pulsante copia codice per invitare il secondo caregiver.",
+  "sha256": "760a0ab12fd9503b921b0e6e3db7422a3cfad028b69401a8e7b2787c59ac39c6",
+  "notes": "Updater interno: Focchy scarica l'APK nell'area privata dell'app, verifica SHA-256, package, versionCode e firma, mostra l'avanzamento e apre direttamente la conferma di installazione Android. Da questa versione non serve più il browser per gli aggiornamenti successivi.",
   "mandatory": false,
-  "sourceRef": "c4effe36883888eb826f67d6d756bbbc54546ad8",
-  "publishedAt": "2026-10-15T09:53:31Z"
+  "sourceRef": "bebaf395075e541ae50cb6577b7644586091b06e",
+  "publishedAt": "2026-10-15T10:39:39Z"
 }
