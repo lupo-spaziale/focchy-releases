@@ -1,10 +1,10 @@
 {
-  "versionCode": 25,
-  "versionName": "0.12.2",
+  "versionCode": 26,
+  "versionName": "0.12.3",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "67a5f7fe90d2b33ba4d6373495a9e54f815cc149135c8371074cc12bd02439ef",
-  "notes": "Box Nido semplificato: rimosse le tendine 'quantità consumata' e 'fonte principale'. Restano luogo, note/menu comunicato e checkbox 'Non ha mangiato il pranzo'. Lo stato del pranzo viene ricavato automaticamente dagli alimenti/grammi registrati; i vecchi valori nascosti di fonte nido non influenzano più la cena o i micronutrienti.",
+  "sha256": "9530c5d2bbf0cb9ec24886f8d80edce5d24a42d6166c6cd9bbc80d07f091c4c3",
+  "notes": "Dopo la registrazione della cena, il riepilogo nutrizionale passa automaticamente da 'prima di cena' al totale dell'intera giornata: proteine, ferro, zinco, calcio, vitamina C e fonti includono anche la cena. La cena suggerita continua invece a essere calcolata solo sui pasti precedenti, evitando circoli logici.",
   "mandatory": false,
-  "sourceRef": "6e1d8785fe20fd41945474f68ef69bf44bf6ec94",
-  "publishedAt": "2026-10-15T17:35:06Z"
+  "sourceRef": "47f5cbb324bb0089f2e444758a03830c81daf4e1",
+  "publishedAt": "2026-10-15T18:18:12Z"
 }
