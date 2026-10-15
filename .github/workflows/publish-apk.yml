@@ -46,6 +46,12 @@ jobs:
           token: ${{ secrets.FOCCHY_SOURCE_TOKEN }}
           path: source
 
+      - name: Validate nutrition JavaScript and regression tests
+        shell: bash
+        run: |
+          for file in source/app/src/main/assets/*.js; do node --check "$file"; done
+          node source/tests/nutrition.test.cjs
+
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
