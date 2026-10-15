@@ -1,10 +1,10 @@
 {
-  "versionCode": 20,
-  "versionName": "0.10.1",
+  "versionCode": 21,
+  "versionName": "0.11.0",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "32d4857c7bb10819f5864e670168242db9104364f2c9dcd743c7deeed5d13883",
-  "notes": "Hotfix grafico Android WebView: corretta la card Cena suggerita che poteva mostrare un grande spazio bianco e testo parzialmente non ridisegnato. Nessuna modifica alle logiche nutrizionali.",
+  "sha256": "5ada29226d43134e5632668dd795d5a05b1d25f63fd493f90333f76d2f6d38fb",
+  "notes": "Grammature ufficiali Roma Capitale per Nidi: precompilazione automatica per fascia 6–9, 9–12, 12–24 e 24–36 mesi; distinzione tra standard ufficiale e quantità realmente mangiata/comunicata; modalità di peso crudo/secco/servito conservata; aggiunti alimenti mancanti del menu nido. Caso reale supportato: standard 6–9 mesi pollo 20 g e pastina/risoni 30 g, modificabili liberamente in 40 g e 50 g mantenendo lo standard separato.",
   "mandatory": false,
-  "sourceRef": "35367ff70791e0188ce7b1290e4d8b2123ba2190",
-  "publishedAt": "2026-10-15T12:50:00Z"
+  "sourceRef": "98e9d7180dc37bc8098e29dcc2bec84faa3fa4a4",
+  "publishedAt": "2026-10-15T15:26:27Z"
 }
