@@ -1,10 +1,10 @@
 {
-  "versionCode": 24,
-  "versionName": "0.12.1",
+  "versionCode": 25,
+  "versionName": "0.12.2",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "19a892137a43a6f24c7ddee0c5f116d86b0caba065be1dcd2026866b53ef2e37",
-  "notes": "Semplificata la gestione delle quantità: eliminati Standard/Servito/Mangiato. Se l'alimento ha una corrispondenza specifica nel PDF Roma Capitale, compare il badge verde e il campo grammi parte dalla quantità ufficiale; altrimenti usa il default Focchy già stabilito, per esempio banana 120 g. Il campo resta sempre modificabile e la quantità salvata entra direttamente nei calcoli nutrizionali. Il riferimento Roma resta conservato separatamente in background.",
+  "sha256": "67a5f7fe90d2b33ba4d6373495a9e54f815cc149135c8371074cc12bd02439ef",
+  "notes": "Box Nido semplificato: rimosse le tendine 'quantità consumata' e 'fonte principale'. Restano luogo, note/menu comunicato e checkbox 'Non ha mangiato il pranzo'. Lo stato del pranzo viene ricavato automaticamente dagli alimenti/grammi registrati; i vecchi valori nascosti di fonte nido non influenzano più la cena o i micronutrienti.",
   "mandatory": false,
-  "sourceRef": "4ed2ee34f5e53c66649df16444db4a4401a263ed",
-  "publishedAt": "2026-10-15T17:08:53Z"
+  "sourceRef": "6e1d8785fe20fd41945474f68ef69bf44bf6ec94",
+  "publishedAt": "2026-10-15T17:35:06Z"
 }
