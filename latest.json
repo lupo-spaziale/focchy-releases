@@ -1,10 +1,10 @@
 {
-  "versionCode": 14,
-  "versionName": "0.9.0",
+  "versionCode": 15,
+  "versionName": "0.9.1",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "0633e0d834c606a7e9d79eb708078784b8cddcfe1714be6934a9ddb55a661889",
-  "notes": "Cena adattiva nido/casa con profilo alimentare, allergeni e controlli di sicurezza; storico settimanale con barre 3D delle proteine da solidi registrati. Verificare il profilo prima dell'uso.",
+  "sha256": "e56da69580909ba087e4085bf372fe66ea4773a6d2e9b4c64f37624f4290fba3",
+  "notes": "Aggiunto peso con storico e riferimento proteico LARN. La cena evita automaticamente ulteriori fonti proteiche concentrate quando i solidi registrati sono già vicini o superiori al riferimento totale giornaliero; il PRI resta un riferimento di popolazione, non un limite massimo. Aggiunta linea LARN nel grafico settimanale.",
   "mandatory": false,
-  "sourceRef": "5151c997ef4863b68eb181c07ca6b1d60c7cee7d",
-  "publishedAt": "2026-10-15T08:32:28Z"
+  "sourceRef": "a02276a1f4a500dd07396546f4fd1fb97540a7e2",
+  "publishedAt": "2026-10-15T09:25:20Z"
 }
