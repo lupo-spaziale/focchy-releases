@@ -69,6 +69,12 @@ jobs:
         with:
           gradle-version: '8.10.2'
 
+      - name: Apply requested version
+        shell: bash
+        run: |
+          sed -i -E "s/versionCode [0-9]+/versionCode ${{ steps.req.outputs.version_code }}/" source/app/build.gradle
+          sed -i -E "s/versionName '[^']+'/versionName '${{ steps.req.outputs.version_name }}'/" source/app/build.gradle
+
       - name: Verify requested version
         shell: bash
         run: |
