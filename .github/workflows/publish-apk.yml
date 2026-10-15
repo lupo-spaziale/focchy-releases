@@ -43,7 +43,7 @@ jobs:
         with:
           repository: lupo-spaziale/ottavia-pasti
           ref: ${{ steps.req.outputs.source_ref }}
-          ssh-key: ${{ secrets.FOCCHY_SOURCE_SSH_KEY }}
+          token: ${{ secrets.FOCCHY_SOURCE_TOKEN }}
           path: source
 
       - uses: actions/setup-java@v4
