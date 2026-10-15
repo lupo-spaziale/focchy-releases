@@ -1,7 +1,7 @@
 {
-  "sourceRef": "70172562b23c8eb8a0847233911c883e04c1f94e",
-  "versionCode": 23,
-  "versionName": "0.12.0",
-  "notes": "Quantità semplificate in tre livelli: Standard Roma (automatico, non entra nei calcoli), Servito (facoltativo, non equivale a mangiato) e Mangiato (dato reale usato per proteine, micronutrienti e cena suggerita). Se modifichi lo standard precompilato, Focchy passa automaticamente a Mangiato. Cena suggerita resta sopra il dettaglio micronutrizionale.",
+  "sourceRef": "4ed2ee34f5e53c66649df16444db4a4401a263ed",
+  "versionCode": 24,
+  "versionName": "0.12.1",
+  "notes": "Semplificata la gestione delle quantità: eliminati Standard/Servito/Mangiato. Se l'alimento ha una corrispondenza specifica nel PDF Roma Capitale, compare il badge verde e il campo grammi parte dalla quantità ufficiale; altrimenti usa il default Focchy già stabilito, per esempio banana 120 g. Il campo resta sempre modificabile e la quantità salvata entra direttamente nei calcoli nutrizionali. Il riferimento Roma resta conservato separatamente in background.",
   "mandatory": false
 }
