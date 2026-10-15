@@ -1,5 +1,5 @@
 {
-  "sourceRef": "7e453357dd409f7d9abfb046e743bc7a60fc8b41",
+  "sourceRef": "a02276a1f4a500dd07396546f4fd1fb97540a7e2",
   "versionCode": 15,
   "versionName": "0.9.1",
   "notes": "Aggiunto peso con storico e riferimento proteico LARN. La cena evita automaticamente ulteriori fonti proteiche concentrate quando i solidi registrati sono già vicini o superiori al riferimento totale giornaliero; il PRI resta un riferimento di popolazione, non un limite massimo. Aggiunta linea LARN nel grafico settimanale.",
