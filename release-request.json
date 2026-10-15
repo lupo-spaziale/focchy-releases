@@ -2,6 +2,6 @@
   "sourceRef": "47f5cbb324bb0089f2e444758a03830c81daf4e1",
   "versionCode": 26,
   "versionName": "0.12.3",
-  "notes": "Riepilogo nutrizionale aggiornato dopo la cena: prima della cena mostra il dettaglio pre-cena usato per il suggerimento; dopo aver registrato la cena, proteine e micronutrienti vengono ricalcolati includendo anche la cena e il titolo diventa 'Riepilogo nutrizionale della giornata'. Include anche il box Nido semplificato.",
+  "notes": "Dopo la registrazione della cena, il riepilogo nutrizionale passa automaticamente da 'prima di cena' al totale dell'intera giornata: proteine, ferro, zinco, calcio, vitamina C e fonti includono anche la cena. La cena suggerita continua invece a essere calcolata solo sui pasti precedenti, evitando circoli logici.",
   "mandatory": false
 }
