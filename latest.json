@@ -1,10 +1,10 @@
 {
-  "versionCode": 13,
-  "versionName": "0.8.1",
+  "versionCode": 14,
+  "versionName": "0.9.0",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "334b627c54bb249f1e41d3bca492b514e85186dbcd8926716bd8748ad7282976",
-  "notes": "Aggiunto controllo aggiornamenti interno: Focchy segnala le nuove versioni e apre direttamente il download ufficiale.",
+  "sha256": "0633e0d834c606a7e9d79eb708078784b8cddcfe1714be6934a9ddb55a661889",
+  "notes": "Cena adattiva nido/casa con profilo alimentare, allergeni e controlli di sicurezza; storico settimanale con barre 3D delle proteine da solidi registrati. Verificare il profilo prima dell'uso.",
   "mandatory": false,
-  "sourceRef": "9ed4d830e7ff01d0b9d9de0ede73f3322fa7dc27",
-  "publishedAt": "2026-10-15T07:47:41Z"
+  "sourceRef": "5151c997ef4863b68eb181c07ca6b1d60c7cee7d",
+  "publishedAt": "2026-10-15T08:32:28Z"
 }
