@@ -1,7 +1,7 @@
 {
-  "sourceRef": "b4b62801d07cb15d6f5c8aee4c768ecedca41d47",
-  "versionCode": 22,
-  "versionName": "0.11.1",
-  "notes": "Micronutrienti: sotto ferro, zinco, calcio e vitamina C viene ora mostrato da quali alimenti registrati deriva la stima e quanto contribuisce ciascun alimento. Nessuna modifica ai calcoli o alla logica della cena.",
+  "sourceRef": "70172562b23c8eb8a0847233911c883e04c1f94e",
+  "versionCode": 23,
+  "versionName": "0.12.0",
+  "notes": "Quantità semplificate in tre livelli: Standard Roma (automatico, non entra nei calcoli), Servito (facoltativo, non equivale a mangiato) e Mangiato (dato reale usato per proteine, micronutrienti e cena suggerita). Se modifichi lo standard precompilato, Focchy passa automaticamente a Mangiato. Cena suggerita resta sopra il dettaglio micronutrizionale.",
   "mandatory": false
 }
