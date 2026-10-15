@@ -1,7 +1,7 @@
 {
-  "sourceRef": "5151c997ef4863b68eb181c07ca6b1d60c7cee7d",
-  "versionCode": 14,
-  "versionName": "0.9.0",
-  "notes": "Cena adattiva nido/casa con profilo alimentare, allergeni e controlli di sicurezza; storico settimanale con barre 3D delle proteine da solidi registrati. Verificare il profilo prima dell'uso.",
+  "sourceRef": "1308f8290bb26d92b59473b1f11547b34004a271",
+  "versionCode": 15,
+  "versionName": "0.9.1",
+  "notes": "Aggiunto peso con storico e riferimento proteico LARN. La cena evita automaticamente ulteriori fonti proteiche concentrate quando i solidi registrati sono già vicini o superiori al riferimento totale giornaliero; il PRI resta un riferimento di popolazione, non un limite massimo. Aggiunta linea LARN nel grafico settimanale.",
   "mandatory": false
 }
