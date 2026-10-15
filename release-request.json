@@ -1,7 +1,7 @@
 {
-  "sourceRef": "6e1d8785fe20fd41945474f68ef69bf44bf6ec94",
-  "versionCode": 25,
-  "versionName": "0.12.2",
-  "notes": "Box Nido semplificato: rimosse le tendine 'quantità consumata' e 'fonte principale'. Restano luogo, note/menu comunicato e checkbox 'Non ha mangiato il pranzo'. Lo stato del pranzo viene ricavato automaticamente dagli alimenti/grammi registrati; i vecchi valori nascosti di fonte nido non influenzano più la cena o i micronutrienti.",
+  "sourceRef": "47f5cbb324bb0089f2e444758a03830c81daf4e1",
+  "versionCode": 26,
+  "versionName": "0.12.3",
+  "notes": "Riepilogo nutrizionale aggiornato dopo la cena: prima della cena mostra il dettaglio pre-cena usato per il suggerimento; dopo aver registrato la cena, proteine e micronutrienti vengono ricalcolati includendo anche la cena e il titolo diventa 'Riepilogo nutrizionale della giornata'. Include anche il box Nido semplificato.",
   "mandatory": false
 }
