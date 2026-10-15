@@ -1,7 +1,7 @@
 {
-  "sourceRef": "25cd4710b338bb8e46323dd19ccfb55c390802c3",
+  "sourceRef": "624c542675754f415acfd33e3657139619078e9c",
   "versionCode": 22,
   "versionName": "0.11.1",
-  "notes": "Piccola aggiunta ai micronutrienti: sotto ferro, zinco, calcio e vitamina C Focchy mostra da quali alimenti registrati deriva il valore, con grammi dell'alimento e contributo stimato in mg. Nessuna modifica alle logiche nutrizionali o alle grammature Roma Capitale.",
+  "notes": "Micronutrienti: sotto ferro, zinco, calcio e vitamina C viene ora mostrato da quali alimenti registrati deriva la stima e quanto contribuisce ciascun alimento. Nessuna modifica ai calcoli o alla logica della cena.",
   "mandatory": false
 }
