@@ -1,7 +1,7 @@
 {
-  "sourceRef": "4ed2ee34f5e53c66649df16444db4a4401a263ed",
-  "versionCode": 24,
-  "versionName": "0.12.1",
-  "notes": "Semplificata la gestione delle quantità: eliminati Standard/Servito/Mangiato. Se l'alimento ha una corrispondenza specifica nel PDF Roma Capitale, compare il badge verde e il campo grammi parte dalla quantità ufficiale; altrimenti usa il default Focchy già stabilito, per esempio banana 120 g. Il campo resta sempre modificabile e la quantità salvata entra direttamente nei calcoli nutrizionali. Il riferimento Roma resta conservato separatamente in background.",
+  "sourceRef": "e0c5626ada63527e6babe6697b80814ebc66468d",
+  "versionCode": 25,
+  "versionName": "0.12.2",
+  "notes": "Box Nido semplificato: rimosse le tendine 'quantità consumata' e 'fonte principale'. Restano luogo, note/menu comunicato e checkbox 'Non ha mangiato il pranzo'. Lo stato del pranzo viene ricavato automaticamente dagli alimenti/grammi registrati; i vecchi valori nascosti di fonte nido non influenzano più la cena o i micronutrienti.",
   "mandatory": false
 }
