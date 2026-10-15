@@ -1,7 +1,7 @@
 {
-  "sourceRef": "c4effe36883888eb826f67d6d756bbbc54546ad8",
-  "versionCode": 16,
-  "versionName": "0.9.2",
-  "notes": "Corretto il flusso famiglia: creazione atomica di famiglia, proprietario e profilo bambino; aggiunto pulsante copia codice per invitare il secondo caregiver.",
+  "sourceRef": "bebaf395075e541ae50cb6577b7644586091b06e",
+  "versionCode": 17,
+  "versionName": "0.9.3",
+  "notes": "Updater interno: Focchy scarica l'APK nell'area privata dell'app, verifica SHA-256, package, versionCode e firma, mostra l'avanzamento e apre direttamente la conferma di installazione Android. Da questa versione non serve più il browser per gli aggiornamenti successivi.",
   "mandatory": false
 }
