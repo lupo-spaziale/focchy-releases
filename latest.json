@@ -1,10 +1,10 @@
 {
-  "versionCode": 12,
-  "versionName": "0.8.0",
+  "versionCode": 13,
+  "versionName": "0.8.1",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "1a4d59909567a0583a26702e76128323aecc0da3e72fe839004767b1a19695d8",
-  "notes": "Prima pubblicazione del canale interno Focchy. Pipeline aggiornata con accesso read-only al repository sorgente.",
+  "sha256": "334b627c54bb249f1e41d3bca492b514e85186dbcd8926716bd8748ad7282976",
+  "notes": "Aggiunto controllo aggiornamenti interno: Focchy segnala le nuove versioni e apre direttamente il download ufficiale.",
   "mandatory": false,
-  "sourceRef": "98de2dc84c4ee06d5d24f83493d8a1c8f792d4b8",
-  "publishedAt": "2026-10-15T07:41:21Z"
+  "sourceRef": "9ed4d830e7ff01d0b9d9de0ede73f3322fa7dc27",
+  "publishedAt": "2026-10-15T07:47:41Z"
 }
