@@ -1,10 +1,10 @@
 {
-  "versionCode": 19,
-  "versionName": "0.10.0",
+  "versionCode": 20,
+  "versionName": "0.10.1",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "f5db30590ca2ab5289b3b361ed8856247e1d02667f371b5f2c10dc75e9461c03",
-  "notes": "Nuovo motore cena: ferro e zinco condizionano direttamente la proposta insieme a varietà e proteine; i mg vengono mostrati solo quando verificati. Corretto peso storico, doppio conteggio nido, età degli avvisi e struttura allergeni/soffocamento. Aggiunta dashboard qualità settimanale.",
+  "sha256": "32d4857c7bb10819f5864e670168242db9104364f2c9dcd743c7deeed5d13883",
+  "notes": "Hotfix grafico Android WebView: corretta la card Cena suggerita che poteva mostrare un grande spazio bianco e testo parzialmente non ridisegnato. Nessuna modifica alle logiche nutrizionali.",
   "mandatory": false,
-  "sourceRef": "445a490b19d4c8bd01605b9b1ea59063adcc9a8c",
-  "publishedAt": "2026-10-15T12:30:55Z"
+  "sourceRef": "35367ff70791e0188ce7b1290e4d8b2123ba2190",
+  "publishedAt": "2026-10-15T12:50:00Z"
 }
