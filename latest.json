@@ -5,6 +5,6 @@
   "sha256": "7565bb71897b068b54916b4c1bb8f4607c579a9aae65562f5b7fd683f007a606",
   "notes": "Micronutrienti: sotto ferro, zinco, calcio e vitamina C viene ora mostrato da quali alimenti registrati deriva la stima e quanto contribuisce ciascun alimento. Nessuna modifica ai calcoli o alla logica della cena.",
   "mandatory": false,
-  "sourceRef": "c30b476a4daea5f662bb3375033c482470795fea",
-  "publishedAt": "2026-10-15T16:10:28Z"
+  "sourceRef": "b4b62801d07cb15d6f5c8aee4c768ecedca41d47",
+  "publishedAt": "2026-10-15T16:11:56Z"
 }
