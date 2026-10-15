@@ -1,7 +1,7 @@
 {
-  "sourceRef": "9ed4d830e7ff01d0b9d9de0ede73f3322fa7dc27",
-  "versionCode": 13,
-  "versionName": "0.8.1",
-  "notes": "Aggiunto controllo aggiornamenti interno: Focchy segnala le nuove versioni e apre direttamente il download ufficiale.",
+  "sourceRef": "5151c997ef4863b68eb181c07ca6b1d60c7cee7d",
+  "versionCode": 14,
+  "versionName": "0.9.0",
+  "notes": "Cena adattiva nido/casa con profilo alimentare, allergeni e controlli di sicurezza; storico settimanale con barre 3D delle proteine da solidi registrati. Verificare il profilo prima dell'uso.",
   "mandatory": false
 }
