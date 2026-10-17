@@ -1,7 +1,7 @@
 {
-  "sourceRef": "47f5cbb324bb0089f2e444758a03830c81daf4e1",
-  "versionCode": 26,
-  "versionName": "0.12.3",
-  "notes": "Dopo la registrazione della cena, il riepilogo nutrizionale passa automaticamente da 'prima di cena' al totale dell'intera giornata: proteine, ferro, zinco, calcio, vitamina C e fonti includono anche la cena. La cena suggerita continua invece a essere calcolata solo sui pasti precedenti, evitando circoli logici.",
+  "sourceRef": "63f6fbb29989f2623bf607e135b20ccb413ce983",
+  "versionCode": 27,
+  "versionName": "0.12.4",
+  "notes": "Importazione sperimentale automatica del menu Nido medi Roma Capitale Municipio VII dal telefono; spuntino, pranzo e merenda precompilati. Quantità di riferimento del nido (pasta 40 g, carne/pesce 30 g, mezzo uovo, yogurt 80 g, robiola 30 g), nuove voci senza nutrienti inventati, grammature modificabili, calcolo cena provvisorio e sincronizzazione mantenuta. La lettura diretta del portale dipende dal suo funzionamento su Android WebView e va verificata sul dispositivo.",
   "mandatory": false
 }
