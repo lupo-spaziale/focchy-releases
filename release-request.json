@@ -1,7 +1,7 @@
 {
-  "sourceRef": "63f6fbb29989f2623bf607e135b20ccb413ce983",
-  "versionCode": 27,
-  "versionName": "0.12.4",
-  "notes": "Importazione sperimentale automatica del menu Nido medi Roma Capitale Municipio VII dal telefono; spuntino, pranzo e merenda precompilati. Quantità di riferimento del nido (pasta 40 g, carne/pesce 30 g, mezzo uovo, yogurt 80 g, robiola 30 g), nuove voci senza nutrienti inventati, grammature modificabili, calcolo cena provvisorio e sincronizzazione mantenuta. La lettura diretta del portale dipende dal suo funzionamento su Android WebView e va verificata sul dispositivo.",
+  "sourceRef": "e1280713640ee5daa0b3104081cff77e57d72b92",
+  "versionCode": 28,
+  "versionName": "0.12.5",
+  "notes": "Precaricamento automatico di tutti i menu Nido medi del Municipio VII dal lunedì al venerdì. I menu vengono letti uno alla volta, salvati per consultazione immediata e sincronizzati con il diario; priorità al giorno selezionato, indicatore di avanzamento 0–5/5 e pulsante per ritentare solo i giorni mancanti. Sabato e domenica viene precaricata la settimana successiva. Quantità modificate e cena suggerita restano preservate.",
   "mandatory": false
 }
