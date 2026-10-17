@@ -1,10 +1,10 @@
 {
-  "versionCode": 27,
-  "versionName": "0.12.4",
+  "versionCode": 28,
+  "versionName": "0.12.5",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "3be5623571cb399bdbf1513665b31a9687a4d7ca72127dd0b808364c08c32292",
-  "notes": "Importazione sperimentale automatica del menu Nido medi Roma Capitale Municipio VII dal telefono; spuntino, pranzo e merenda precompilati. Quantità di riferimento del nido (pasta 40 g, carne/pesce 30 g, mezzo uovo, yogurt 80 g, robiola 30 g), nuove voci senza nutrienti inventati, grammature modificabili, calcolo cena provvisorio e sincronizzazione mantenuta. La lettura diretta del portale dipende dal suo funzionamento su Android WebView e va verificata sul dispositivo.",
+  "sha256": "ec685a91c316fc041a17c6a0d4ac33b35b8afd813db1458851b28168c590e60c",
+  "notes": "Precaricamento automatico di tutti i menu Nido medi del Municipio VII dal lunedì al venerdì. I menu vengono letti uno alla volta, salvati per consultazione immediata e sincronizzati con il diario; priorità al giorno selezionato, indicatore di avanzamento 0–5/5 e pulsante per ritentare solo i giorni mancanti. Sabato e domenica viene precaricata la settimana successiva. Quantità modificate e cena suggerita restano preservate.",
   "mandatory": false,
-  "sourceRef": "63f6fbb29989f2623bf607e135b20ccb413ce983",
-  "publishedAt": "2026-10-17T13:15:36Z"
+  "sourceRef": "e1280713640ee5daa0b3104081cff77e57d72b92",
+  "publishedAt": "2026-10-17T14:19:38Z"
 }
