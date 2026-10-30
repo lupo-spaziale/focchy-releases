@@ -1,10 +1,10 @@
 {
-  "versionCode": 31,
-  "versionName": "0.12.8",
+  "versionCode": 32,
+  "versionName": "0.14.0",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "8cb4714492579dd6817c4e126bf5fa1f2fe0b68738b7730b563c2d0c8026f741",
-  "notes": "Nuovo riconoscimento nutrizionale nella schermata Nuovo alimento: digitando cicoria compaiono le tre schede CREA ufficiali (cicoria di campo cruda, bollita, coltivata cruda) con valori per 100 g; basta scegliere Usa valori per compilare i campi. Ricerca istantanea anche nel catalogo Focchy; ricerca opzionale prodotti confezionati su Open Food Facts con limite chiamate. Fonte dei dati e correzioni manuali salvate nel profilo Family. Nutrienti sconosciuti restano vuoti e non sono inventati. Nessuna modifica ai pasti esistenti.",
+  "sha256": "e96721ed01011a6e1b563440b920d33fc5e0446ff0b287b76819f57c324f7158",
+  "notes": "Audit cumulativo: sicurezza delle viste alimenti e link esterni; Family con paginazione, letture remote non riscritte automaticamente, polling recupero 120s, isolamento dati per profilo e Diagnostica Family. Cene con proiezione delle proteine per tre opzioni e distinzione tra PRI LARN e limite massimo; menu nido completi ed esclusioni manuali persistenti; ricette con allergeni e nutrienti parziali; PDF settimanale salvato in Download (Android 10+) e condivisibile; ricerca barcode EAN tramite Open Food Facts e lettura immagine quando supportata. Non cancellare lo storico. La gestione transazionale di modifiche simultanee dello stesso alimento resta da perfezionare; la scansione foto dipende dal WebView.",
   "mandatory": false,
-  "sourceRef": "8ecf8205e33fd253b384c511ddb9fbf69d059625",
-  "publishedAt": "2026-10-30T20:21:46Z"
+  "sourceRef": "cf70550b5806781ebe3a58b65cebf20db521001e",
+  "publishedAt": "2026-10-30T21:55:02Z"
 }
