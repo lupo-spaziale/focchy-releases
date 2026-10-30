@@ -1,7 +1,7 @@
 {
-  "sourceRef": "e1280713640ee5daa0b3104081cff77e57d72b92",
-  "versionCode": 28,
-  "versionName": "0.12.5",
-  "notes": "Precaricamento automatico di tutti i menu Nido medi del Municipio VII dal lunedì al venerdì. I menu vengono letti uno alla volta, salvati per consultazione immediata e sincronizzati con il diario; priorità al giorno selezionato, indicatore di avanzamento 0–5/5 e pulsante per ritentare solo i giorni mancanti. Sabato e domenica viene precaricata la settimana successiva. Quantità modificate e cena suggerita restano preservate.",
+  "sourceRef": "cadcf6887689b276e9d873ab951f4e00c0fc5e6f",
+  "versionCode": 29,
+  "versionName": "0.12.6",
+  "notes": "Corretto il blocco Family confermato dai log Supabase (quantità 0 g non inviate); sincronizzazione condivisa di alimenti e grammature tra i due telefoni, salvataggi concorrenti accodati senza perdere modifiche locali, ID stabili per evitare duplicati del menu Roma VII, aggiornamenti in app ogni 15 secondi quando aperta e al ritorno in primo piano, stato sincronizzazione e messaggi di errore visibili. Non serve reinstallare e non occorre cancellare dati.",
   "mandatory": false
 }
