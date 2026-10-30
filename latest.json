@@ -1,10 +1,10 @@
 {
-  "versionCode": 30,
-  "versionName": "0.12.7",
+  "versionCode": 31,
+  "versionName": "0.12.8",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "07bcd88c1dc06679428c9f7ffbcfadf760ab6d9703c79b59953102e0f3bc5724",
-  "notes": "Nuovo suggerimento cena: 3 combinazioni variate con rotazione alimenti, alternative e pulsante Altre combinazioni; quantità del nido previste separate dal consumo reale. Puliti 26 duplicati menu nel cloud. Ricette: Torta Camilla senza zuccheri aggiunti precaricata, con 2 uova, mezza bustina lievito, arancia, mandorle pelate, farina 00, mela, carote e cannella q.b. Editor con ingredienti digitabili, pezzi (uovo/mela/pera), bustine, q.b. e 6 suggerimenti senza zucchero da NHS filtrati per età. Nutrienti ignoti non inventati. Test Family e nutrizione superati.",
+  "sha256": "8cb4714492579dd6817c4e126bf5fa1f2fe0b68738b7730b563c2d0c8026f741",
+  "notes": "Nuovo riconoscimento nutrizionale nella schermata Nuovo alimento: digitando cicoria compaiono le tre schede CREA ufficiali (cicoria di campo cruda, bollita, coltivata cruda) con valori per 100 g; basta scegliere Usa valori per compilare i campi. Ricerca istantanea anche nel catalogo Focchy; ricerca opzionale prodotti confezionati su Open Food Facts con limite chiamate. Fonte dei dati e correzioni manuali salvate nel profilo Family. Nutrienti sconosciuti restano vuoti e non sono inventati. Nessuna modifica ai pasti esistenti.",
   "mandatory": false,
-  "sourceRef": "3ef6f3936c12a3d83fff18241bf13bcaffcb748f",
-  "publishedAt": "2026-10-30T19:13:22Z"
+  "sourceRef": "8ecf8205e33fd253b384c511ddb9fbf69d059625",
+  "publishedAt": "2026-10-30T20:21:46Z"
 }
