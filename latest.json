@@ -1,10 +1,10 @@
 {
-  "versionCode": 28,
-  "versionName": "0.12.5",
+  "versionCode": 29,
+  "versionName": "0.12.6",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "ec685a91c316fc041a17c6a0d4ac33b35b8afd813db1458851b28168c590e60c",
-  "notes": "Precaricamento automatico di tutti i menu Nido medi del Municipio VII dal lunedì al venerdì. I menu vengono letti uno alla volta, salvati per consultazione immediata e sincronizzati con il diario; priorità al giorno selezionato, indicatore di avanzamento 0–5/5 e pulsante per ritentare solo i giorni mancanti. Sabato e domenica viene precaricata la settimana successiva. Quantità modificate e cena suggerita restano preservate.",
+  "sha256": "c99a12f5ad6d0da2168737edb417a9acb9c4d4722538f9784a54fead680b2146",
+  "notes": "Corretto il blocco Family confermato dai log Supabase (quantità 0 g non inviate); sincronizzazione condivisa di alimenti e grammature tra i due telefoni, salvataggi concorrenti accodati senza perdere modifiche locali, ID stabili per evitare duplicati del menu Roma VII, aggiornamenti in app ogni 15 secondi quando aperta e al ritorno in primo piano, stato sincronizzazione e messaggi di errore visibili. Non serve reinstallare e non occorre cancellare dati.",
   "mandatory": false,
-  "sourceRef": "e1280713640ee5daa0b3104081cff77e57d72b92",
-  "publishedAt": "2026-10-17T14:19:38Z"
+  "sourceRef": "cadcf6887689b276e9d873ab951f4e00c0fc5e6f",
+  "publishedAt": "2026-10-30T07:33:17Z"
 }
