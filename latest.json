@@ -1,10 +1,10 @@
 {
-  "versionCode": 29,
-  "versionName": "0.12.6",
+  "versionCode": 30,
+  "versionName": "0.12.7",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "c99a12f5ad6d0da2168737edb417a9acb9c4d4722538f9784a54fead680b2146",
-  "notes": "Corretto il blocco Family confermato dai log Supabase (quantità 0 g non inviate); sincronizzazione condivisa di alimenti e grammature tra i due telefoni, salvataggi concorrenti accodati senza perdere modifiche locali, ID stabili per evitare duplicati del menu Roma VII, aggiornamenti in app ogni 15 secondi quando aperta e al ritorno in primo piano, stato sincronizzazione e messaggi di errore visibili. Non serve reinstallare e non occorre cancellare dati.",
+  "sha256": "07bcd88c1dc06679428c9f7ffbcfadf760ab6d9703c79b59953102e0f3bc5724",
+  "notes": "Nuovo suggerimento cena: 3 combinazioni variate con rotazione alimenti, alternative e pulsante Altre combinazioni; quantità del nido previste separate dal consumo reale. Puliti 26 duplicati menu nel cloud. Ricette: Torta Camilla senza zuccheri aggiunti precaricata, con 2 uova, mezza bustina lievito, arancia, mandorle pelate, farina 00, mela, carote e cannella q.b. Editor con ingredienti digitabili, pezzi (uovo/mela/pera), bustine, q.b. e 6 suggerimenti senza zucchero da NHS filtrati per età. Nutrienti ignoti non inventati. Test Family e nutrizione superati.",
   "mandatory": false,
-  "sourceRef": "cadcf6887689b276e9d873ab951f4e00c0fc5e6f",
-  "publishedAt": "2026-10-30T07:33:17Z"
+  "sourceRef": "3ef6f3936c12a3d83fff18241bf13bcaffcb748f",
+  "publishedAt": "2026-10-30T19:13:22Z"
 }
