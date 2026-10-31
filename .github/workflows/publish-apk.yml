@@ -84,7 +84,17 @@ jobs:
           grep -qx "VERSION_NAME=${{ steps.req.outputs.version_name }}" source/app/version.properties
           grep -Fq "applicationId 'com.aniellopassariello.focchy'" source/app/build.gradle
           cd source
-          bash tools/ci-fast.sh
+          # Older immutable release source commits predate the consolidated CI script.
+          if [[ -f tools/ci-fast.sh ]]; then
+            bash tools/ci-fast.sh
+          else
+            for js in app/src/main/assets/*.js; do node --check "$js"; done
+            for test in tests/*.test.cjs; do
+              [[ -f "$test" ]] || continue
+              node "$test"
+            done
+            node tools/test-roma-menu.mjs
+          fi
 
       - name: Setup Java
         if: steps.req.outputs.build == 'true'
