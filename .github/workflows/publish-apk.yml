@@ -2,114 +2,201 @@ name: Publish Focchy APK
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
     paths:
       - release-request.json
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "Verifica APK senza pubblicare oppure pubblica la richiesta"
+        type: choice
+        options: [verify, publish]
+        default: verify
 
 permissions:
   contents: write
 
+# Never run two publishers concurrently. Newer release requests supersede old builds.
 concurrency:
-  group: focchy-release
+  group: focchy-ota-publication
   cancel-in-progress: true
 
 jobs:
-  publish:
+  release:
     runs-on: ubuntu-latest
+    timeout-minutes: 35
     steps:
-      - name: Checkout release repository
+      - name: Checkout public release repository
         uses: actions/checkout@v4
         with:
           path: release
 
-      - name: Read release request
+      - name: Validate request and skip identical published versions
         id: req
         shell: bash
+        env:
+          MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'publish' }}
         run: |
+          set -euo pipefail
           cd release
-          echo "source_ref=$(jq -r '.sourceRef' release-request.json)" >> "$GITHUB_OUTPUT"
-          echo "version_code=$(jq -r '.versionCode' release-request.json)" >> "$GITHUB_OUTPUT"
-          echo "version_name=$(jq -r '.versionName' release-request.json)" >> "$GITHUB_OUTPUT"
-          echo "mandatory=$(jq -r '.mandatory // false' release-request.json)" >> "$GITHUB_OUTPUT"
-          {
-            echo 'notes<<EOF'
-            jq -r '.notes // ""' release-request.json
-            echo EOF
-          } >> "$GITHUB_OUTPUT"
+          jq -e . release-request.json >/dev/null
+          CODE="$(jq -er '.versionCode | numbers' release-request.json)"
+          NAME="$(jq -er '.versionName | strings' release-request.json)"
+          REF="$(jq -er '.sourceRef | strings' release-request.json)"
+          [[ "$CODE" =~ ^[1-9][0-9]*$ ]] || { echo "::error::Invalid versionCode"; exit 1; }
+          [[ "$NAME" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "::error::Invalid versionName"; exit 1; }
+          [[ "$REF" =~ ^[a-f0-9]{40}$ ]] || { echo "::error::sourceRef must be an immutable 40-char SHA"; exit 1; }
+          [[ "$MODE" == verify || "$MODE" == publish ]] || exit 1
+          echo "version_code=$CODE" >> "$GITHUB_OUTPUT"
+          echo "version_name=$NAME" >> "$GITHUB_OUTPUT"
+          echo "source_ref=$REF" >> "$GITHUB_OUTPUT"
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          BUILD=true
+          if [[ "$MODE" == publish && -f latest.json && -s Focchy.apk ]]; then
+            OLD_CODE="$(jq -r '.versionCode // 0' latest.json)"
+            OLD_NAME="$(jq -r '.versionName // ""' latest.json)"
+            OLD_REF="$(jq -r '.sourceRef // ""' latest.json)"
+            OLD_HASH="$(jq -r '.sha256 // ""' latest.json)"
+            if [[ "$CODE" == "$OLD_CODE" && "$NAME" == "$OLD_NAME" && "$REF" == "$OLD_REF" ]] &&
+               [[ -n "$OLD_HASH" && "$(sha256sum Focchy.apk | cut -d' ' -f1)" == "$OLD_HASH" ]]; then
+              BUILD=false
+              echo "::notice::Version $NAME ($CODE) at $REF already published and hash-verified. Skipping build."
+            fi
+          fi
+          echo "build=$BUILD" >> "$GITHUB_OUTPUT"
 
-      - name: Checkout private Focchy source
+      - name: Checkout immutable private Focchy source
+        if: steps.req.outputs.build == 'true'
         uses: actions/checkout@v4
         with:
           repository: lupo-spaziale/ottavia-pasti
           ref: ${{ steps.req.outputs.source_ref }}
           token: ${{ secrets.FOCCHY_SOURCE_TOKEN }}
+          persist-credentials: false
           path: source
 
-      - name: Validate nutrition JavaScript and regression tests
+      - name: Validate source version and complete fast tests
+        if: steps.req.outputs.build == 'true'
         shell: bash
         run: |
-          for file in source/app/src/main/assets/*.js; do node --check "$file"; done
-          node source/tests/nutrition.test.cjs
-          node source/tests/updater.test.cjs
+          set -euo pipefail
+          grep -qx "VERSION_CODE=${{ steps.req.outputs.version_code }}" source/app/version.properties
+          grep -qx "VERSION_NAME=${{ steps.req.outputs.version_name }}" source/app/version.properties
+          grep -Fq "applicationId 'com.aniellopassariello.focchy'" source/app/build.gradle
+          cd source
+          # Older immutable release source commits predate the consolidated CI script.
+          if [[ -f tools/ci-fast.sh ]]; then
+            bash tools/ci-fast.sh
+          else
+            for js in app/src/main/assets/*.js; do node --check "$js"; done
+            for test in tests/*.test.cjs; do
+              [[ -f "$test" ]] || continue
+              node "$test"
+            done
+            node tools/test-roma-menu.mjs
+          fi
 
-      - uses: actions/setup-java@v4
+      - name: Setup Java
+        if: steps.req.outputs.build == 'true'
+        uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
 
-      - name: Install Android SDK packages
-        shell: bash
-        run: |
-          SDKMANAGER="$(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager | head -n 1)"
-          test -x "$SDKMANAGER"
-          yes | "$SDKMANAGER" --licenses >/dev/null || true
-          "$SDKMANAGER" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
-
-      - uses: gradle/actions/setup-gradle@v4
+      - name: Setup Gradle with dependency caching
+        if: steps.req.outputs.build == 'true'
+        uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.10.2'
 
-      - name: Apply requested version
+      - name: Ensure required Android platform is installed
+        if: steps.req.outputs.build == 'true'
         shell: bash
         run: |
-          printf 'VERSION_CODE=%s\nVERSION_NAME=%s\n' "${{ steps.req.outputs.version_code }}" "${{ steps.req.outputs.version_name }}" > source/app/version.properties
+          set -euo pipefail
+          SDKMANAGER="$(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager | head -n 1)"
+          test -x "$SDKMANAGER"
+          if [[ ! -d "$ANDROID_HOME/platforms/android-36" || ! -d "$ANDROID_HOME/build-tools/36.0.0" ]]; then
+            "$SDKMANAGER" --install "platforms;android-36" "build-tools;36.0.0"
+          fi
 
-      - name: Verify requested version
-        shell: bash
-        run: |
-          grep -qx "VERSION_CODE=${{ steps.req.outputs.version_code }}" source/app/version.properties
-          grep -qx "VERSION_NAME=${{ steps.req.outputs.version_name }}" source/app/version.properties
-          grep -q "applicationId 'com.aniellopassariello.focchy'" source/app/build.gradle
-
-      - name: Build signed APK
+      - name: Compile Android once (existing stable debug signing)
+        if: steps.req.outputs.build == 'true'
         working-directory: source
-        run: gradle :app:assembleDebug --stacktrace
+        shell: bash
+        run: gradle :app:assembleDebug --no-daemon --stacktrace
 
-      - name: Publish APK and metadata
+      - name: Verify package, version, signature, and OTA compatibility
+        if: steps.req.outputs.build == 'true'
         shell: bash
         env:
-          VERSION_CODE: ${{ steps.req.outputs.version_code }}
-          VERSION_NAME: ${{ steps.req.outputs.version_name }}
-          NOTES: ${{ steps.req.outputs.notes }}
-          MANDATORY: ${{ steps.req.outputs.mandatory }}
-          SOURCE_REF: ${{ steps.req.outputs.source_ref }}
+          CODE: ${{ steps.req.outputs.version_code }}
+          NAME: ${{ steps.req.outputs.version_name }}
         run: |
+          set -euo pipefail
+          APK=source/app/build/outputs/apk/debug/app-debug.apk
+          TOOLS="$ANDROID_HOME/build-tools/36.0.0"
+          test -s "$APK"
+          "$TOOLS/apksigner" verify --print-certs "$APK" >/tmp/new-apk-signature.txt
+          INFO="$("$TOOLS/aapt" dump badging "$APK" | grep "^package: name=" | head -n 1)"
+          echo "$INFO" | grep -F "name='com.aniellopassariello.focchy'"
+          echo "$INFO" | grep -F "versionCode='$CODE'"
+          echo "$INFO" | grep -F "versionName='$NAME'"
+          test -s release/Focchy.apk || { echo "::error::Previous signed APK missing"; exit 1; }
+          "$TOOLS/apksigner" verify --print-certs release/Focchy.apk >/tmp/old-apk-signature.txt
+          NEW_CERT="$(sed -n 's/^Signer #1 certificate SHA-256 digest: //p' /tmp/new-apk-signature.txt | head -n 1)"
+          OLD_CERT="$(sed -n 's/^Signer #1 certificate SHA-256 digest: //p' /tmp/old-apk-signature.txt | head -n 1)"
+          [[ -n "$NEW_CERT" && "$NEW_CERT" == "$OLD_CERT" ]] ||
+             { echo "::error::Signing certificate changed: OTA update would fail"; exit 1; }
+          echo "Signing certificate matches the installed APK."
+
+      - name: Upload temporary debug APK only for manual verification
+        if: steps.req.outputs.build == 'true' && steps.req.outputs.mode == 'verify'
+        uses: actions/upload-artifact@v4
+        with:
+          name: Focchy-manual-verification
+          path: source/app/build/outputs/apk/debug/app-debug.apk
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: error
+
+      - name: Publish OTA APK and JSON metadata (one atomic commit)
+        if: steps.req.outputs.build == 'true' && steps.req.outputs.mode == 'publish'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git -C release fetch origin main
+          CURRENT="$(git -C release show origin/main:release-request.json | jq -r '.sourceRef + "|" + .versionName + "|" + (.versionCode|tostring)')"
+          EXPECTED="${{ steps.req.outputs.source_ref }}|${{ steps.req.outputs.version_name }}|${{ steps.req.outputs.version_code }}"
+          [[ "$CURRENT" == "$EXPECTED" ]] ||
+             { echo "::error::Release request was replaced during build. Refusing stale publish."; exit 1; }
+          git -C release pull --ff-only origin main
           cp source/app/build/outputs/apk/debug/app-debug.apk release/Focchy.apk
-          SHA256="$(sha256sum release/Focchy.apk | awk '{print $1}')"
-          cd release
-          jq -n             --argjson versionCode "$VERSION_CODE"             --arg versionName "$VERSION_NAME"             --arg downloadUrl "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk"             --arg sha256 "$SHA256"             --arg notes "$NOTES"             --argjson mandatory "$MANDATORY"             --arg sourceRef "$SOURCE_REF"             '{
-              versionCode:$versionCode,
-              versionName:$versionName,
-              downloadUrl:$downloadUrl,
-              sha256:$sha256,
-              notes:$notes,
-              mandatory:$mandatory,
-              sourceRef:$sourceRef,
-              publishedAt:(now|todateiso8601)
-            }' > latest.json
-          git config user.name "Focchy Release Bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add Focchy.apk latest.json
-          git commit -m "Pubblica Focchy v$VERSION_NAME ($VERSION_CODE)" || exit 0
-          git push
+          SHA="$(sha256sum release/Focchy.apk | cut -d' ' -f1)"
+          jq -n --slurpfile req release/release-request.json --arg sha "$SHA" \
+             --arg url "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk" '
+               $req[0] as $r |
+               {
+                 versionCode: $r.versionCode,
+                 versionName: $r.versionName,
+                 downloadUrl: $url,
+                 sha256: $sha,
+                 notes: ($r.notes // ""),
+                 mandatory: ($r.mandatory // false),
+                 sourceRef: $r.sourceRef,
+                 publishedAt: (now|todateiso8601)
+               }' > release/latest.json
+          git -C release config user.name "Focchy Release Bot"
+          git -C release config user.email "actions@users.noreply.github.com"
+          git -C release add Focchy.apk latest.json
+          git -C release commit -m "Pubblica Focchy v${{ steps.req.outputs.version_name }} (${{ steps.req.outputs.version_code }})"
+          git -C release push origin HEAD:main
+          echo "## Published Focchy ${{ steps.req.outputs.version_name }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "APK SHA-256: $SHA" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Summarize no-op or manual verification
+        if: steps.req.outputs.build == 'false' || steps.req.outputs.mode == 'verify'
+        run: |
+          echo "## Focchy ${{ steps.req.outputs.version_name }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Mode: ${{ steps.req.outputs.mode }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Build needed: ${{ steps.req.outputs.build }}" >> "$GITHUB_STEP_SUMMARY"
