@@ -1,10 +1,10 @@
 {
-  "versionCode": 34,
-  "versionName": "0.14.2",
+  "versionCode": 35,
+  "versionName": "0.14.3",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "a112ba309401908d539680d080dd61b54d0e0b3caf65abb2dab2ae5d46d81119",
-  "notes": "Lettura tabelle nutrizionali migliorata con coordinate delle righe ML Kit: associa nutrienti alla colonna per 100 g e blocca l'uso della colonna per confezione/15 g se mancano dati; propone valori solo dopo verifica e conferma. In Alimenti, barcode EAN manuale e fotografia sempre disponibili in alto, insieme al pulsante Nuovo alimento. Alimenti base e personalizzati ordinati in categorie chiuse espandibili, ricerca che apre le categorie corrispondenti. Testo OCR grezzo richiudibile; nessuna modifica allo storico o Family.",
+  "sha256": "4e02d1566ba2e9eee6edb3c39f61743edfaca9453d4ea41a501bdb352ca29b38",
+  "notes": "Barcode EAN 8009004816145: prodotto Alce Nero Sticks mais e carota biologici 15 g confermato da GTIN rivenditore e tabella nutrizionale ufficiale Alce Nero per 100 g. Scheda produttore verificata quando Open Food Facts non conosce l'EAN o non dispone dei nutrienti; foto e inserimento manuale invariati. Avviso indicazione età dal 12° mese; nessuna stima per altri codici. Storico Family invariato.",
   "mandatory": false,
-  "sourceRef": "ed620d9bf5af74ee447b0867d0c1ab9fe5519e97",
-  "publishedAt": "2026-10-31T18:57:55Z"
+  "sourceRef": "e0b6f1a1b6c1f82b13248bb8077a12dba3c381b2",
+  "publishedAt": "2026-10-31T19:31:17Z"
 }
