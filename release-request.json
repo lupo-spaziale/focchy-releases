@@ -2,6 +2,6 @@
   "sourceRef": "7008a7d7ad13895e9cd31304edf1fb2eb6d73db1",
   "versionCode": 33,
   "versionName": "0.14.1",
-  "notes": "Corregge lettura barcode e tabella nutrizionale: EAN digitato interrogato tramite connessione Android nativa a Open Food Facts (no restrizioni CORS/file WebView); distinguere EAN valido ma non censito, errori HTTP/rete e tabella non disponibile. Scansione fotografica EAN e OCR locale con modelli ML Kit inclusi nell'app; nessun supporto obbligatorio BarcodeDetector WebView. Nuovi controlli OCR: richiede intestazione per 100 g e macronutrienti completi, rifiuta testo illeggibile e più colonne, anteprima e conferma prima di applicare. Non importa numeri non verificati. Fotografa frontalmente la sola tabella.",
+  "notes": "Corregge lettura barcode e tabella nutrizionale: EAN digitato interrogato tramite connessione Android nativa a Open Food Facts (no restrizioni CORS/file WebView); distinguere EAN valido ma non censito, errori HTTP/rete e tabella non disponibile. Scansione fotografica EAN e OCR locale con modelli ML Kit inclusi nell'app; nessun supporto obbligatorio BarcodeDetector WebView. Nuovi controlli OCR: richiede intestazione per 100 g e macronutrienti completi, rifiuta testo illeggibile e più colonne, anteprima e conferma prima di applicare. Non importa numeri non verificati. Fotografa frontalmente la sola tabella. Build ritentata e verificata tramite pipeline di rilascio.",
   "mandatory": false
 }
