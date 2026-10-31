@@ -1,10 +1,10 @@
 {
-  "versionCode": 33,
-  "versionName": "0.14.1",
+  "versionCode": 34,
+  "versionName": "0.14.2",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "de8f15cfd7f2ec2261f63dce18e2965e6aa66d60cb3e0b0fe967d5b41dd0da1b",
-  "notes": "Corregge lettura barcode e tabella nutrizionale: EAN digitato interrogato tramite connessione Android nativa a Open Food Facts (no restrizioni CORS/file WebView); distinguere EAN valido ma non censito, errori HTTP/rete e tabella non disponibile. Scansione fotografica EAN e OCR locale con modelli ML Kit inclusi nell'app; nessun supporto obbligatorio BarcodeDetector WebView. Nuovi controlli OCR: richiede intestazione per 100 g e macronutrienti completi, rifiuta testo illeggibile e più colonne, anteprima e conferma prima di applicare. Non importa numeri non verificati. Fotografa frontalmente la sola tabella.",
+  "sha256": "a112ba309401908d539680d080dd61b54d0e0b3caf65abb2dab2ae5d46d81119",
+  "notes": "Lettura tabelle nutrizionali migliorata con coordinate delle righe ML Kit: associa nutrienti alla colonna per 100 g e blocca l'uso della colonna per confezione/15 g se mancano dati; propone valori solo dopo verifica e conferma. In Alimenti, barcode EAN manuale e fotografia sempre disponibili in alto, insieme al pulsante Nuovo alimento. Alimenti base e personalizzati ordinati in categorie chiuse espandibili, ricerca che apre le categorie corrispondenti. Testo OCR grezzo richiudibile; nessuna modifica allo storico o Family.",
   "mandatory": false,
-  "sourceRef": "0b1a1f4379f332eb5cc083bb5be610cd05c524e4",
-  "publishedAt": "2026-10-31T17:25:05Z"
+  "sourceRef": "ed620d9bf5af74ee447b0867d0c1ab9fe5519e97",
+  "publishedAt": "2026-10-31T18:57:55Z"
 }
