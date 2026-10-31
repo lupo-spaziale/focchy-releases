@@ -1,7 +1,7 @@
 {
-  "sourceRef": "e0b6f1a1b6c1f82b13248bb8077a12dba3c381b2",
-  "versionCode": 35,
-  "versionName": "0.14.3",
-  "notes": "Barcode EAN 8009004816145: prodotto Alce Nero Sticks mais e carota biologici 15 g confermato da GTIN rivenditore e tabella nutrizionale ufficiale Alce Nero per 100 g. Scheda produttore verificata quando Open Food Facts non conosce l'EAN o non dispone dei nutrienti; foto e inserimento manuale invariati. Avviso indicazione età dal 12° mese; nessuna stima per altri codici. Storico Family invariato.",
+  "sourceRef": "d931be4cc1ceedae39e144b848ed7b3cb4cf0055",
+  "versionCode": 36,
+  "versionName": "0.14.4",
+  "notes": "Ricerca barcode EAN estesa automaticamente oltre Open Food Facts: per codici sconosciuti usa anche il catalogo gratuito UPCitemdb (identificazione EAN esatto, nome e marca). L'identificazione non equivale a dati nutrizionali certificati: Focchy mostra nome, marca e collegamento alla ricerca della scheda del produttore, consente di fotografare etichetta, ma lascia vuoti nutrienti non verificati. Restano le schede ufficiali produttore già verificate. Cache temporanea per ridurre richieste, limite gratuito del provider e nessuna chiave o servizio a pagamento. Storico Family invariato.",
   "mandatory": false
 }
