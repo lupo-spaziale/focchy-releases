@@ -1,10 +1,10 @@
 {
-  "versionCode": 32,
-  "versionName": "0.14.0",
+  "versionCode": 33,
+  "versionName": "0.14.1",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "e96721ed01011a6e1b563440b920d33fc5e0446ff0b287b76819f57c324f7158",
-  "notes": "Audit cumulativo: sicurezza delle viste alimenti e link esterni; Family con paginazione, letture remote non riscritte automaticamente, polling recupero 120s, isolamento dati per profilo e Diagnostica Family. Cene con proiezione delle proteine per tre opzioni e distinzione tra PRI LARN e limite massimo; menu nido completi ed esclusioni manuali persistenti; ricette con allergeni e nutrienti parziali; PDF settimanale salvato in Download (Android 10+) e condivisibile; ricerca barcode EAN tramite Open Food Facts e lettura immagine quando supportata. Non cancellare lo storico. La gestione transazionale di modifiche simultanee dello stesso alimento resta da perfezionare; la scansione foto dipende dal WebView.",
+  "sha256": "de8f15cfd7f2ec2261f63dce18e2965e6aa66d60cb3e0b0fe967d5b41dd0da1b",
+  "notes": "Corregge lettura barcode e tabella nutrizionale: EAN digitato interrogato tramite connessione Android nativa a Open Food Facts (no restrizioni CORS/file WebView); distinguere EAN valido ma non censito, errori HTTP/rete e tabella non disponibile. Scansione fotografica EAN e OCR locale con modelli ML Kit inclusi nell'app; nessun supporto obbligatorio BarcodeDetector WebView. Nuovi controlli OCR: richiede intestazione per 100 g e macronutrienti completi, rifiuta testo illeggibile e più colonne, anteprima e conferma prima di applicare. Non importa numeri non verificati. Fotografa frontalmente la sola tabella.",
   "mandatory": false,
-  "sourceRef": "cf70550b5806781ebe3a58b65cebf20db521001e",
-  "publishedAt": "2026-10-30T21:55:02Z"
+  "sourceRef": "0b1a1f4379f332eb5cc083bb5be610cd05c524e4",
+  "publishedAt": "2026-10-31T17:25:05Z"
 }
