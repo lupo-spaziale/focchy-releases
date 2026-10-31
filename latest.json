@@ -1,10 +1,10 @@
 {
-  "versionCode": 36,
-  "versionName": "0.14.4",
+  "versionCode": 37,
+  "versionName": "0.14.5",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "926032708b4951da3b3fef6c6951a9cdbe80cd5203a5e6c72069748e46105225",
-  "notes": "Ricerca barcode EAN estesa automaticamente oltre Open Food Facts: per codici sconosciuti usa anche il catalogo gratuito UPCitemdb (identificazione EAN esatto, nome e marca). L'identificazione non equivale a dati nutrizionali certificati: Focchy mostra nome, marca e collegamento alla ricerca della scheda del produttore, consente di fotografare etichetta, ma lascia vuoti nutrienti non verificati. Restano le schede ufficiali produttore già verificate. Cache temporanea per ridurre richieste, limite gratuito del provider e nessuna chiave o servizio a pagamento. Storico Family invariato.",
+  "sha256": "1326cc2b25672aa9acc9f197331d1f039c7b6649f15a7a20ea968452545834e6",
+  "notes": "Focchy V3: riconoscimento barcode più affidabile. Open Food Facts mostra nome e marca anche quando mancano i nutrienti; in tal caso propone 'Usa solo nome' e 'Fotografa etichetta'. Ricerca per nome migliorata, verifica EAN/UPC e controllo dei valori nutrizionali incongruenti. Ricerca alternativa UPCitemdb invariata; nessun nutriente inventato. Dati e sincronizzazione familiare invariati.",
   "mandatory": false,
-  "sourceRef": "d931be4cc1ceedae39e144b848ed7b3cb4cf0055",
-  "publishedAt": "2026-10-31T19:49:07Z"
+  "sourceRef": "bc81d43d9a2ac364ebc23aa99af1a213a61db18a",
+  "publishedAt": "2026-10-31T20:45:35Z"
 }
