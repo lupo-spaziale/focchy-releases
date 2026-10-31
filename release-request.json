@@ -1,7 +1,7 @@
 {
-  "sourceRef": "cf70550b5806781ebe3a58b65cebf20db521001e",
-  "versionCode": 32,
-  "versionName": "0.14.0",
-  "notes": "Audit cumulativo: sicurezza delle viste alimenti e link esterni; Family con paginazione, letture remote non riscritte automaticamente, polling recupero 120s, isolamento dati per profilo e Diagnostica Family. Cene con proiezione delle proteine per tre opzioni e distinzione tra PRI LARN e limite massimo; menu nido completi ed esclusioni manuali persistenti; ricette con allergeni e nutrienti parziali; PDF settimanale salvato in Download (Android 10+) e condivisibile; ricerca barcode EAN tramite Open Food Facts e lettura immagine quando supportata. Non cancellare lo storico. La gestione transazionale di modifiche simultanee dello stesso alimento resta da perfezionare; la scansione foto dipende dal WebView.",
+  "sourceRef": "7008a7d7ad13895e9cd31304edf1fb2eb6d73db1",
+  "versionCode": 33,
+  "versionName": "0.14.1",
+  "notes": "Corregge lettura barcode e tabella nutrizionale: EAN digitato interrogato tramite connessione Android nativa a Open Food Facts (no restrizioni CORS/file WebView); distinguere EAN valido ma non censito, errori HTTP/rete e tabella non disponibile. Scansione fotografica EAN e OCR locale con modelli ML Kit inclusi nell'app; nessun supporto obbligatorio BarcodeDetector WebView. Nuovi controlli OCR: richiede intestazione per 100 g e macronutrienti completi, rifiuta testo illeggibile e più colonne, anteprima e conferma prima di applicare. Non importa numeri non verificati. Fotografa frontalmente la sola tabella.",
   "mandatory": false
 }
