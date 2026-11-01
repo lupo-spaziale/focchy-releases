@@ -1,10 +1,10 @@
 {
-  "versionCode": 37,
-  "versionName": "0.14.5",
+  "versionCode": 38,
+  "versionName": "0.14.6",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "1326cc2b25672aa9acc9f197331d1f039c7b6649f15a7a20ea968452545834e6",
-  "notes": "Focchy V3: riconoscimento barcode più affidabile. Open Food Facts mostra nome e marca anche quando mancano i nutrienti; in tal caso propone 'Usa solo nome' e 'Fotografa etichetta'. Ricerca per nome migliorata, verifica EAN/UPC e controllo dei valori nutrizionali incongruenti. Ricerca alternativa UPCitemdb invariata; nessun nutriente inventato. Dati e sincronizzazione familiare invariati.",
+  "sha256": "d7f2b9a8930ba9b7424e45b925055accc920f478e742c74bd7ad04d2701ef050",
+  "notes": "Focchy 0.14.6: fascia 9–12 mesi da novembre; grammature ufficiali Roma Capitale allineate al Ricettario 2024 (contratto 2021–2026 prorogato nel 2026/27), senza usare la gara 6673 annullata. Pesce 30 g, yogurt 125 g, ricotta 25 g, tuorlo sodo 16 g distinto da uovo intero; pasta 30 g, carne fresca 20 g nelle ricette N25/N47, verdure per preparazione. Menu invernale Municipio VII «Medi» da portale ufficiale, con quantità comunicate dal nido tenute separate dalle grammature ufficiali. Dati, package, firma e sincronizzazione invariati.",
   "mandatory": false,
-  "sourceRef": "bc81d43d9a2ac364ebc23aa99af1a213a61db18a",
-  "publishedAt": "2026-10-31T20:45:35Z"
+  "sourceRef": "7c6c4d66bcdb1b874609acfdfcf20321d7d9f607",
+  "publishedAt": "2026-11-01T07:32:29Z"
 }
