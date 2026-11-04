@@ -1,10 +1,10 @@
 {
-  "versionCode": 39,
-  "versionName": "0.14.7",
+  "versionCode": 40,
+  "versionName": "0.14.8",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "59239d7cc9b9183fb5c2d24737f57cca73e16e5446012ee59ac1ab0fd7566478",
-  "notes": "Aggiunti al catalogo base in Verdure: Passato di verdure (150 g modificabili, nutrienti da definire in base alla ricetta) e Verza cotta bollita (80 g modificabili, macronutrienti CREA 005215). Migliorata la gestione dei nutrienti mancanti affinché le proteine non note non siano presentate come zero. Nessuna modifica a dati familiari o firma APK.",
+  "sha256": "e3562c3d22a091201f7d69e5f8f24da85af726af7774ea827d203a9fc9d0ad1b",
+  "notes": "Revisione catalogo alimenti Focchy: 31 nuove voci base (ora 111), tra cui broccoli, cicoria, cavolo cappuccio, carciofi, porro, kiwi, albicocche, avocado, quinoa, fiocchi avena, miglio, cannellini, mandorle e noci macinate, sardine e sgombro. Valori CREA per 100 g con stato crudo/cotto e nutrienti non disponibili lasciati vuoti; quantità rapide modificabili, non grammature ufficiali. Migliorato riconoscimento preparazioni menu Roma e segnalazione allergeni/consistenze. Storico e sincronizzazione invariati.",
   "mandatory": false,
-  "sourceRef": "cd3a67417ed14817d523eff29acef5860962f87f",
-  "publishedAt": "2026-11-04T20:42:11Z"
+  "sourceRef": "00535b042df407356a89141197c9502ca9ef40f4",
+  "publishedAt": "2026-11-04T22:39:19Z"
 }
