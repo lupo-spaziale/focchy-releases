@@ -1,7 +1,7 @@
 {
-  "sourceRef": "cd3a67417ed14817d523eff29acef5860962f87f",
-  "versionCode": 39,
-  "versionName": "0.14.7",
-  "notes": "Aggiunti al catalogo base in Verdure: Passato di verdure (150 g modificabili, nutrienti da definire in base alla ricetta) e Verza cotta bollita (80 g modificabili, macronutrienti CREA 005215). Migliorata la gestione dei nutrienti mancanti affinché le proteine non note non siano presentate come zero. Nessuna modifica a dati familiari o firma APK.",
+  "sourceRef": "00535b042df407356a89141197c9502ca9ef40f4",
+  "versionCode": 40,
+  "versionName": "0.14.8",
+  "notes": "Revisione catalogo alimenti Focchy: 31 nuove voci base (ora 111), tra cui broccoli, cicoria, cavolo cappuccio, carciofi, porro, kiwi, albicocche, avocado, quinoa, fiocchi avena, miglio, cannellini, mandorle e noci macinate, sardine e sgombro. Valori CREA per 100 g con stato crudo/cotto e nutrienti non disponibili lasciati vuoti; quantità rapide modificabili, non grammature ufficiali. Migliorato riconoscimento preparazioni menu Roma e segnalazione allergeni/consistenze. Storico e sincronizzazione invariati.",
   "mandatory": false
 }
