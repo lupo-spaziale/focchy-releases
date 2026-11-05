@@ -1,7 +1,7 @@
 {
-  "sourceRef": "ad4dd016c01542010be80f59008d274a012b91ed",
-  "versionCode": 42,
-  "versionName": "0.15.0",
-  "notes": "Revisione funzionale completa: nutrienti e quantità coerenti tra secco/crudo/cotto (CREA: lenticchie secche e bollite), micronutrienti non inventati, cene e previsione proteica calcolate sugli stessi ingredienti, selezione esplicita peso e grammature nido sempre modificabili, PDF settimanale riallineato, cambio giorno automatico a mezzanotte senza alterare lo storico. Menu Roma Capitale 9–12 mesi, alimenti, scansioni, sincronizzazione e updater preservati. Vedi rapporto audit nel repository sorgente.",
+  "sourceRef": "515098b32dc5e832a00a37a41fdb896eceac2877",
+  "versionCode": 43,
+  "versionName": "0.15.1",
+  "notes": "Riepilogo nido più chiaro: il dato di 3,2 g rimane visibile come proteine dei soli alimenti confermati, mentre il KPI principale mostra la stima parziale con porzioni standard previste. Aggiunti 50 g di patata (peso netto crudo) e 15 g di farro secco nella crema come valori Focchy indicativi 9–12 mesi, chiaramente distinti dalle grammature Roma Capitale e sempre modificabili. Riconoscimento farro aggiunto e recupero automatico dai menu già importati senza modificare quantità mangiate né pasti esclusi. Prova 5 novembre: 12,0 g stima parziale contro 3,2 g confermati.",
   "mandatory": false
 }
