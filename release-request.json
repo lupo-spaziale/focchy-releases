@@ -1,7 +1,7 @@
 {
-  "sourceRef": "299f080c6755783b9f628970d088922d02fd8e0d",
-  "versionCode": 41,
-  "versionName": "0.14.9",
-  "notes": "Roma Capitale 9–12 mesi: grammature ufficiali automatiche nel menu nido (lenticchie 12 g secche, ricotta 25 g, pane 10 g, yogurt 125 g, frutta 60 g, olio EVO 7 g); quantità effettivamente mangiate sempre separate e modificabili. Proteine confermate distinte dalla stima parziale ipotetica del menu previsto, con corretta distinzione lenticchie secche/cotte. Cene più varie: non ripropone fonti proteiche già previste a pranzo, ruota anche cereali e verdure. Storico e firma APK invariati.",
+  "sourceRef": "c5bf293ac27714a551bc57a7d6f68b61b4f1df2b",
+  "versionCode": 42,
+  "versionName": "0.15.0",
+  "notes": "Revisione funzionale completa: nutrienti e quantità coerenti tra secco/crudo/cotto (CREA: lenticchie secche e bollite), micronutrienti non inventati, cene e previsione proteica calcolate sugli stessi ingredienti, selezione esplicita peso e grammature nido sempre modificabili, PDF settimanale riallineato, cambio giorno automatico a mezzanotte senza alterare lo storico. Menu Roma Capitale 9–12 mesi, alimenti, scansioni, sincronizzazione e updater preservati. Vedi rapporto audit nel repository sorgente.",
   "mandatory": false
 }
