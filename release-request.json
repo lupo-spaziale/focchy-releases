@@ -1,5 +1,5 @@
 {
-  "sourceRef": "c5bf293ac27714a551bc57a7d6f68b61b4f1df2b",
+  "sourceRef": "ad4dd016c01542010be80f59008d274a012b91ed",
   "versionCode": 42,
   "versionName": "0.15.0",
   "notes": "Revisione funzionale completa: nutrienti e quantità coerenti tra secco/crudo/cotto (CREA: lenticchie secche e bollite), micronutrienti non inventati, cene e previsione proteica calcolate sugli stessi ingredienti, selezione esplicita peso e grammature nido sempre modificabili, PDF settimanale riallineato, cambio giorno automatico a mezzanotte senza alterare lo storico. Menu Roma Capitale 9–12 mesi, alimenti, scansioni, sincronizzazione e updater preservati. Vedi rapporto audit nel repository sorgente.",
