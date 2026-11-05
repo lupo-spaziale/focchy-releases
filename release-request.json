@@ -1,7 +1,7 @@
 {
-  "sourceRef": "00535b042df407356a89141197c9502ca9ef40f4",
-  "versionCode": 40,
-  "versionName": "0.14.8",
-  "notes": "Revisione catalogo alimenti Focchy: 31 nuove voci base (ora 111), tra cui broccoli, cicoria, cavolo cappuccio, carciofi, porro, kiwi, albicocche, avocado, quinoa, fiocchi avena, miglio, cannellini, mandorle e noci macinate, sardine e sgombro. Valori CREA per 100 g con stato crudo/cotto e nutrienti non disponibili lasciati vuoti; quantità rapide modificabili, non grammature ufficiali. Migliorato riconoscimento preparazioni menu Roma e segnalazione allergeni/consistenze. Storico e sincronizzazione invariati.",
+  "sourceRef": "4f4d0a7917aa633c650df94f13ae660cf78fa941",
+  "versionCode": 41,
+  "versionName": "0.14.9",
+  "notes": "Roma Capitale 9–12 mesi: grammature ufficiali automatiche nel menu nido (lenticchie 12 g secche, ricotta 25 g, pane 10 g, yogurt 125 g, frutta 60 g, olio EVO 7 g); quantità effettivamente mangiate sempre separate e modificabili. Proteine confermate distinte dalla stima parziale ipotetica del menu previsto, con corretta distinzione lenticchie secche/cotte. Cene più varie: non ripropone fonti proteiche già previste a pranzo, ruota anche cereali e verdure. Storico e firma APK invariati.",
   "mandatory": false
 }
