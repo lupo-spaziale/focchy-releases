@@ -1,10 +1,10 @@
 {
-  "versionCode": 43,
-  "versionName": "0.15.1",
+  "versionCode": 44,
+  "versionName": "0.15.2",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "db68288437981a4b3ff59b5e42acc0b1e6e17879da57539ee3381ddad7bb7d9f",
-  "notes": "Riepilogo nido più chiaro: il dato di 3,2 g rimane visibile come proteine dei soli alimenti confermati, mentre il KPI principale mostra la stima parziale con porzioni standard previste. Aggiunti 50 g di patata (peso netto crudo) e 15 g di farro secco nella crema come valori Focchy indicativi 9–12 mesi, chiaramente distinti dalle grammature Roma Capitale e sempre modificabili. Riconoscimento farro aggiunto e recupero automatico dai menu già importati senza modificare quantità mangiate né pasti esclusi. Prova 5 novembre: 12,0 g stima parziale contro 3,2 g confermati.",
+  "sha256": "abf250148e081cb82671cb24b36dcfb49161f537397e718e41d8c7b680568632",
+  "notes": "I pasti del nido vengono conteggiati automaticamente con le grammature standard, senza chiedere conferme: puoi modificare ogni quantità se le maestre comunicano grammi differenti. Un solo totale proteico include nido e altri pasti; quantità ufficiali Roma dove presenti, altrimenti fallback indicativo Focchy. Vecchi menu importati aggiornati senza sovrascrivere correzioni manuali o reintrodurre cibi rimossi. Giorni futuri conteggiati quando arrivano, opzione 'Non ha mangiato' preservata, sincronizzazione cloud riallineata. Nessuna modifica diretta al database.",
   "mandatory": false,
-  "sourceRef": "427209de616883799ae22ffd4c446d91319471f2",
-  "publishedAt": "2026-11-05T17:51:35Z"
+  "sourceRef": "23cb4e8349e9f305d2b50e00aab47b379f71f72c",
+  "publishedAt": "2026-11-06T16:43:32Z"
 }
