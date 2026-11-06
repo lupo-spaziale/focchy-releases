@@ -1,7 +1,7 @@
 {
-  "sourceRef": "427209de616883799ae22ffd4c446d91319471f2",
-  "versionCode": 43,
-  "versionName": "0.15.1",
-  "notes": "Riepilogo nido più chiaro: il dato di 3,2 g rimane visibile come proteine dei soli alimenti confermati, mentre il KPI principale mostra la stima parziale con porzioni standard previste. Aggiunti 50 g di patata (peso netto crudo) e 15 g di farro secco nella crema come valori Focchy indicativi 9–12 mesi, chiaramente distinti dalle grammature Roma Capitale e sempre modificabili. Riconoscimento farro aggiunto e recupero automatico dai menu già importati senza modificare quantità mangiate né pasti esclusi. Prova 5 novembre: 12,0 g stima parziale contro 3,2 g confermati.",
+  "sourceRef": "f45b6b0be52dae85cf55cc951598e8dc5b8cc5fb",
+  "versionCode": 44,
+  "versionName": "0.15.2",
+  "notes": "I pasti del nido vengono conteggiati automaticamente con le grammature standard, senza chiedere conferme: puoi modificare ogni quantità se le maestre comunicano grammi differenti. Un solo totale proteico include nido e altri pasti; quantità ufficiali Roma dove presenti, altrimenti fallback indicativo Focchy. Vecchi menu importati aggiornati senza sovrascrivere correzioni manuali o reintrodurre cibi rimossi. Giorni futuri conteggiati quando arrivano, opzione 'Non ha mangiato' preservata, sincronizzazione cloud riallineata. Nessuna modifica diretta al database.",
   "mandatory": false
 }
