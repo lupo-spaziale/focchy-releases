@@ -1,5 +1,5 @@
 {
-  "sourceRef": "5681ab0c64b7d2781dd18dbe49035b98ebd1b768",
+  "sourceRef": "3c495509a13aa86dd59c8b14b90e7307d2be94d9",
   "versionCode": 44,
   "versionName": "0.15.2",
   "notes": "I pasti del nido vengono conteggiati automaticamente con le grammature standard, senza chiedere conferme: puoi modificare ogni quantità se le maestre comunicano grammi differenti. Un solo totale proteico include nido e altri pasti; quantità ufficiali Roma dove presenti, altrimenti fallback indicativo Focchy. Vecchi menu importati aggiornati senza sovrascrivere correzioni manuali o reintrodurre cibi rimossi. Giorni futuri conteggiati quando arrivano, opzione 'Non ha mangiato' preservata, sincronizzazione cloud riallineata. Nessuna modifica diretta al database.",
