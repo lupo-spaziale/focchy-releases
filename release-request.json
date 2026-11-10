@@ -1,5 +1,5 @@
 {
-  "sourceRef": "2df3d7421531be452833b80fa512bd2f535c5c95",
+  "sourceRef": "0ec24c32ae90cf92f08be8cdd7f8cddc9c836ad7",
   "versionCode": 46,
   "versionName": "0.15.4",
   "notes": "Riepilogo settimanale: grafico delle proteine, giorni con dati e indicatori di qualità ora usano lo stesso snapshot della settimana selezionata. Risolti i contatori 0/7 con sette giornate registrate. Rotazione delle fonti proteiche: conteggio per occasione alimentare distinta; i mini pancake non equivalgono a quattro uova e quattro latticini interi. Da 2 a 8 novembre: 1 uovo singolo da 50 g + 4 mini pancake da 20 g contenenti circa 0,53 uova = ~1,53 uova equivalenti. Conteggi dei latticini senza raddoppiare le ricette. Aggiornamento automatico al cambio settimana, regressioni introdotte per controllo. Dati, quantità e sincronizzazione preservati.",
