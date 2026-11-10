@@ -1,7 +1,7 @@
 {
-  "sourceRef": "23cb4e8349e9f305d2b50e00aab47b379f71f72c",
-  "versionCode": 44,
-  "versionName": "0.15.2",
-  "notes": "I pasti del nido vengono conteggiati automaticamente con le grammature standard, senza chiedere conferme: puoi modificare ogni quantità se le maestre comunicano grammi differenti. Un solo totale proteico include nido e altri pasti; quantità ufficiali Roma dove presenti, altrimenti fallback indicativo Focchy. Vecchi menu importati aggiornati senza sovrascrivere correzioni manuali o reintrodurre cibi rimossi. Giorni futuri conteggiati quando arrivano, opzione 'Non ha mangiato' preservata, sincronizzazione cloud riallineata. Nessuna modifica diretta al database.",
+  "sourceRef": "a19489ec2d35865c521075da9f296add891a550f",
+  "versionCode": 45,
+  "versionName": "0.15.3",
+  "notes": "Risolto il bug 0/7 in Qualità e varietà: lettura della settimana selezionata condivisa correttamente con il grafico; indicatori aggiornati al cambio settimana. Rotazione fonti più corretta: conteggia separatamente le occasioni con alimenti proteici inseriti direttamente e gli ingredienti presenti nelle ricette composte. Uovo 2–8 novembre: 1 uovo intero e 4 porzioni di mini pancake da 20 g; circa 1,5 uova equivalenti totali secondo la ricetta salvata (1 uovo in 150 g di pancake), non 5 uova intere. Nessuna variazione a pasti, quantità, ricette o cloud.",
   "mandatory": false
 }
