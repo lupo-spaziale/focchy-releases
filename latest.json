@@ -1,10 +1,10 @@
 {
-  "versionCode": 47,
-  "versionName": "0.15.5",
+  "versionCode": 48,
+  "versionName": "0.15.6",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "36d60df27c76e2aa15b6b6f0123ad6af9c8bbabd7f0489572b9340efd3af8bac",
-  "notes": "Ricette: aggiunta unità ml per liquidi (conversioni differenziate: latte intero 1,03 g/ml, bevanda di mandorla senza zuccheri aggiunti circa 1,00 g/ml), mantenendo i ml originali nelle modifiche. Inserito nel catalogo Latte di mandorla senza zuccheri aggiunti (allergene mandorle; valori nutrizionali da inserire in base alla marca) e Succo di limone. Aggiunta automaticamente Torta di mele: 2 uova, 180 g farina 00, 60 ml bevanda di mandorla, 60 ml latte vaccino intero, 1 bustina lievito dolci, succo di mezzo limone, cannella q.b., 2 mele. Numero porzioni iniziale 8 modificabile e peso finale post-cottura da registrare. Nessun valore nutrizionale inventato per ingredienti senza dati; allergeni indicati. Ricetta con ID stabile per sincronizzazione familiare.",
+  "sha256": "afdd7b3c08477a4629bfbe9460af9c8d62dee2a69f67ca7565a9b2868f6d93ec",
+  "notes": "Ricette: proteine e macronutrienti non più tutti n.d. quando il peso finale è presente. Valori verificabili CREA per farina 00, mandorle pelate e succo di limone; riepilogo per 100 g e per porzione con indicazione «almeno ... (parziale)» se mancano alcuni ingredienti. Torta Camilla da 400 g con proteine parziali; Mini pancake da 150 g con farina 00 CREA, proteine per 100 g calcolabili. Torta di mele: 2 mele con riferimento standard CREA 150 g di parte edibile ciascuna, lievito bustina classica 16 g Paneangeli, dati mancanti ben indicati; non viene inventato il peso finale dopo cottura né i nutrienti della bevanda di mandorla senza marca. Metadati nutrizionali aggiornati anche dopo sincronizzazione familiare; nessuna modifica alle quantità salvate.",
   "mandatory": false,
-  "sourceRef": "92fa32b5231a0215607fa78ccbad51887d8d8dbb",
-  "publishedAt": "2026-11-11T12:54:41Z"
+  "sourceRef": "ffac757930b2a3d12b8a157b45fe1d6eb53395d5",
+  "publishedAt": "2026-11-11T16:40:37Z"
 }
