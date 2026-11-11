@@ -1,10 +1,10 @@
 {
-  "versionCode": 46,
-  "versionName": "0.15.4",
+  "versionCode": 47,
+  "versionName": "0.15.5",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "711f8d3e34ae54e4ffc4d77812e11d87c49440657ee0d9435795466330d563b9",
-  "notes": "Riepilogo settimanale: grafico delle proteine, giorni con dati e indicatori di qualità ora usano lo stesso snapshot della settimana selezionata. Risolti i contatori 0/7 con sette giornate registrate. Rotazione delle fonti proteiche: conteggio per occasione alimentare distinta; i mini pancake non equivalgono a quattro uova e quattro latticini interi. Da 2 a 8 novembre: 1 uovo singolo da 50 g + 4 mini pancake da 20 g contenenti circa 0,53 uova = ~1,53 uova equivalenti. Conteggi dei latticini senza raddoppiare le ricette. Aggiornamento automatico al cambio settimana, regressioni introdotte per controllo. Dati, quantità e sincronizzazione preservati.",
+  "sha256": "36d60df27c76e2aa15b6b6f0123ad6af9c8bbabd7f0489572b9340efd3af8bac",
+  "notes": "Ricette: aggiunta unità ml per liquidi (conversioni differenziate: latte intero 1,03 g/ml, bevanda di mandorla senza zuccheri aggiunti circa 1,00 g/ml), mantenendo i ml originali nelle modifiche. Inserito nel catalogo Latte di mandorla senza zuccheri aggiunti (allergene mandorle; valori nutrizionali da inserire in base alla marca) e Succo di limone. Aggiunta automaticamente Torta di mele: 2 uova, 180 g farina 00, 60 ml bevanda di mandorla, 60 ml latte vaccino intero, 1 bustina lievito dolci, succo di mezzo limone, cannella q.b., 2 mele. Numero porzioni iniziale 8 modificabile e peso finale post-cottura da registrare. Nessun valore nutrizionale inventato per ingredienti senza dati; allergeni indicati. Ricetta con ID stabile per sincronizzazione familiare.",
   "mandatory": false,
-  "sourceRef": "466e4165be416df400570eaa15a9a8127f3ac2b0",
-  "publishedAt": "2026-11-10T20:08:24Z"
+  "sourceRef": "92fa32b5231a0215607fa78ccbad51887d8d8dbb",
+  "publishedAt": "2026-11-11T12:54:41Z"
 }
