@@ -1,5 +1,5 @@
 {
-  "sourceRef": "2692469f1f367e6b0b62bd36ae6767cc341d2847",
+  "sourceRef": "92fa32b5231a0215607fa78ccbad51887d8d8dbb",
   "versionCode": 47,
   "versionName": "0.15.5",
   "notes": "Ricette: aggiunta unità ml per liquidi (conversioni differenziate: latte intero 1,03 g/ml, bevanda di mandorla senza zuccheri aggiunti circa 1,00 g/ml), mantenendo i ml originali nelle modifiche. Inserito nel catalogo Latte di mandorla senza zuccheri aggiunti (allergene mandorle; valori nutrizionali da inserire in base alla marca) e Succo di limone. Aggiunta automaticamente Torta di mele: 2 uova, 180 g farina 00, 60 ml bevanda di mandorla, 60 ml latte vaccino intero, 1 bustina lievito dolci, succo di mezzo limone, cannella q.b., 2 mele. Numero porzioni iniziale 8 modificabile e peso finale post-cottura da registrare. Nessun valore nutrizionale inventato per ingredienti senza dati; allergeni indicati. Ricetta con ID stabile per sincronizzazione familiare.",
