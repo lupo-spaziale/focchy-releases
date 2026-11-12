@@ -1,10 +1,10 @@
 {
-  "versionCode": 48,
-  "versionName": "0.15.6",
+  "versionCode": 49,
+  "versionName": "0.15.7",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "afdd7b3c08477a4629bfbe9460af9c8d62dee2a69f67ca7565a9b2868f6d93ec",
-  "notes": "Ricette: proteine e macronutrienti non più tutti n.d. quando il peso finale è presente. Valori verificabili CREA per farina 00, mandorle pelate e succo di limone; riepilogo per 100 g e per porzione con indicazione «almeno ... (parziale)» se mancano alcuni ingredienti. Torta Camilla da 400 g con proteine parziali; Mini pancake da 150 g con farina 00 CREA, proteine per 100 g calcolabili. Torta di mele: 2 mele con riferimento standard CREA 150 g di parte edibile ciascuna, lievito bustina classica 16 g Paneangeli, dati mancanti ben indicati; non viene inventato il peso finale dopo cottura né i nutrienti della bevanda di mandorla senza marca. Metadati nutrizionali aggiornati anche dopo sincronizzazione familiare; nessuna modifica alle quantità salvate.",
+  "sha256": "bb9f231ba471e6d14620ddd1dd2f6dd45dfcce5e26e0e0a692855bb480a1e436",
+  "notes": "Sincronizzazione Family: corretto l’errore «Cannot read properties of null (reading id)» durante il rinnovo della sessione. Aggiornamento fra due account in tempo reale, recupero automatico dopo errori di rete, controllo di sicurezza ogni minuto e avviso persistente se la sincronizzazione fallisce. Aggiunto il pulsante «Copia diagnostica». Nessuna cancellazione dei pasti salvati.",
   "mandatory": false,
-  "sourceRef": "ffac757930b2a3d12b8a157b45fe1d6eb53395d5",
-  "publishedAt": "2026-11-11T16:40:37Z"
+  "sourceRef": "aadcb861f788e9af9361b27eab03d1cd61762cd8",
+  "publishedAt": "2026-11-12T18:50:18Z"
 }
