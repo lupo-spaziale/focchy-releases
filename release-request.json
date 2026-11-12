@@ -1,7 +1,7 @@
 {
-  "sourceRef": "aadcb861f788e9af9361b27eab03d1cd61762cd8",
-  "versionCode": 49,
-  "versionName": "0.15.7",
-  "notes": "Sincronizzazione Family: corretto l’errore «Cannot read properties of null (reading id)» durante il rinnovo della sessione. Aggiornamento fra due account in tempo reale, recupero automatico dopo errori di rete, controllo di sicurezza ogni minuto e avviso persistente se la sincronizzazione fallisce. Aggiunto il pulsante «Copia diagnostica». Nessuna cancellazione dei pasti salvati.",
+  "sourceRef": "04e38182090df3d5cf05c54f4b5d1bb0ea86eae9",
+  "versionCode": 50,
+  "versionName": "0.15.8",
+  "notes": "Risolto il blocco della sincronizzazione Family che rimaneva «in corso» all'infinito: il ricalcolo delle ricette e il caricamento dei menu nido non generano più modifiche artificiali durante la lettura dal cloud. Recupero dei pasti condivisi fra i due account senza cancellazioni o reset. Test di regressione aggiunti e superati.",
   "mandatory": false
 }
