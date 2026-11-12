@@ -1,10 +1,10 @@
 {
-  "versionCode": 49,
-  "versionName": "0.15.7",
+  "versionCode": 50,
+  "versionName": "0.15.8",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "bb9f231ba471e6d14620ddd1dd2f6dd45dfcce5e26e0e0a692855bb480a1e436",
-  "notes": "Sincronizzazione Family: corretto l’errore «Cannot read properties of null (reading id)» durante il rinnovo della sessione. Aggiornamento fra due account in tempo reale, recupero automatico dopo errori di rete, controllo di sicurezza ogni minuto e avviso persistente se la sincronizzazione fallisce. Aggiunto il pulsante «Copia diagnostica». Nessuna cancellazione dei pasti salvati.",
+  "sha256": "cd84fa3385c56ed7c51539e8afaf5a31697aa65611d74ff625fe753668a5c26c",
+  "notes": "Risolto il blocco della sincronizzazione Family che rimaneva «in corso» all'infinito: il ricalcolo delle ricette e il caricamento dei menu nido non generano più modifiche artificiali durante la lettura dal cloud. Recupero dei pasti condivisi fra i due account senza cancellazioni o reset. Test di regressione aggiunti e superati.",
   "mandatory": false,
-  "sourceRef": "aadcb861f788e9af9361b27eab03d1cd61762cd8",
-  "publishedAt": "2026-11-12T18:50:18Z"
+  "sourceRef": "04e38182090df3d5cf05c54f4b5d1bb0ea86eae9",
+  "publishedAt": "2026-11-12T19:20:41Z"
 }
