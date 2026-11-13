@@ -1,10 +1,10 @@
 {
-  "versionCode": 50,
-  "versionName": "0.15.8",
+  "versionCode": 51,
+  "versionName": "0.15.9",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "cd84fa3385c56ed7c51539e8afaf5a31697aa65611d74ff625fe753668a5c26c",
-  "notes": "Risolto il blocco della sincronizzazione Family che rimaneva «in corso» all'infinito: il ricalcolo delle ricette e il caricamento dei menu nido non generano più modifiche artificiali durante la lettura dal cloud. Recupero dei pasti condivisi fra i due account senza cancellazioni o reset. Test di regressione aggiunti e superati.",
+  "sha256": "8092713d0d44854764515e4a1bd857f3a469583837b149047b2d0bb3ed2be9a8",
+  "notes": "Corretto il conteggio proteico: merluzzo/nasello a crudo con scheda CREA e contributi noti delle ricette parziali (es. mini pancake). Verificate le preparazioni di 111 alimenti, aggiunti riferimenti CREA a crudo per pesci e carni, e protetti i calcoli da equivalenze errate tra peso secco, crudo, cotto e ammollato. Dettaglio delle proteine alimento per alimento, grafici e cena coerenti; valori ignoti segnalati, mai inventati. Nessun pasto modificato o cancellato.",
   "mandatory": false,
-  "sourceRef": "04e38182090df3d5cf05c54f4b5d1bb0ea86eae9",
-  "publishedAt": "2026-11-12T19:20:41Z"
+  "sourceRef": "c60f0cee1691fc522e9dd11edd79596361c075ca",
+  "publishedAt": "2026-11-13T13:02:09Z"
 }
