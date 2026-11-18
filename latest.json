@@ -1,10 +1,10 @@
 {
-  "versionCode": 53,
-  "versionName": "0.15.11",
+  "versionCode": 54,
+  "versionName": "0.15.12",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "29bb52c59c96f2d25c5bf7f313b78bbb08e6b0cffbeecae91ba0806fd05267d0",
-  "notes": "Aggiunto Ragù di carne (condimento) agli alimenti base. Il menu nido dei Medi ora conserva distintamente il ragù e la pastina/riso, anche per la ricetta N115. Quantità iniziale del ragù indicativa e modificabile (20 g Focchy, non porzione ufficiale), senza inventare calorie o proteine del condimento. Dati esistenti e cena preservati.",
+  "sha256": "3d63173fb2caeeb492b4fbe180d39ca45cd001ce19c9597e430bd02e2295357d",
+  "notes": "Ragù di carne N115: quantità standard 20 g (Focchy, non ufficiale Roma 9–12). Calcolo nutrizionale stimato dai 74 g di ingredienti a crudo della ricetta ufficiale per Medi, escludendo la pastina: per 100 g 96,5 kcal, 5,16 g proteine, 2,54 g carboidrati, 7,29 g grassi, 0,79 g fibre; sale non determinabile. Per 20 g circa 19,3 kcal e 1,03 g di proteine. Dati indicati come stimati e non esatti: resa dopo cottura non misurata. Pasta e ragù restano voci distinte nei menu; altri pasti invariati.",
   "mandatory": false,
-  "sourceRef": "88947a5c609e75f46ab3ef7b5759de9f5f3e69bf",
-  "publishedAt": "2026-11-18T18:22:04Z"
+  "sourceRef": "57e593927aeda513510bc2ffedd54a7034c08ab3",
+  "publishedAt": "2026-11-18T18:32:06Z"
 }
