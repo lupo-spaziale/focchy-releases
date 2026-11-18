@@ -1,10 +1,10 @@
 {
-  "versionCode": 52,
-  "versionName": "0.15.10",
+  "versionCode": 53,
+  "versionName": "0.15.11",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "84d577eaddae2ef7296c9dccfd890b3a99fa82c78fe1601303de0d0b5b975f3f",
-  "notes": "Aggiunto Philadelphia Original (vaschetta 80 g) fra gli alimenti base in Latticini, con macronutrienti e sale della scheda ufficiale del produttore, allergene latte e quantità modificabile. Il riepilogo proteico esistente rimane invariato. Nessun pasto o ricetta viene cancellato.",
+  "sha256": "29bb52c59c96f2d25c5bf7f313b78bbb08e6b0cffbeecae91ba0806fd05267d0",
+  "notes": "Aggiunto Ragù di carne (condimento) agli alimenti base. Il menu nido dei Medi ora conserva distintamente il ragù e la pastina/riso, anche per la ricetta N115. Quantità iniziale del ragù indicativa e modificabile (20 g Focchy, non porzione ufficiale), senza inventare calorie o proteine del condimento. Dati esistenti e cena preservati.",
   "mandatory": false,
-  "sourceRef": "4cb9ea6dd1e862a239e7fea3a407d546552a3a6a",
-  "publishedAt": "2026-11-15T17:18:24Z"
+  "sourceRef": "88947a5c609e75f46ab3ef7b5759de9f5f3e69bf",
+  "publishedAt": "2026-11-18T18:22:04Z"
 }
