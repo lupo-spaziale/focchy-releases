@@ -1,10 +1,10 @@
 {
-  "versionCode": 55,
-  "versionName": "0.15.13",
+  "versionCode": 56,
+  "versionName": "0.15.14",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "5203b565da2aabe66d26985fed456cfd4e78c56560ed78e6e329fbee34878eb3",
-  "notes": "Proteine: subito sotto il totale compare il contributo di ogni alimento (grammi e proteine), con indicazione degli alimenti esclusi e del motivo. Corretto il caso del 19 novembre: uovo e verdure fresche segnate erroneamente come 'peso secco' sono calcolate come peso prima della cottura senza modificare i dati salvati, segnalando l'interpretazione come indicativa. Il subtotale passa da 3,6 g a circa 10,6 g; frutta non identificata resta n.d. Nessuna modifica al menu di scelta dei pesi, da discutere separatamente.",
+  "sha256": "c0a845d3fb7721e325165b1b65c72790a82b1ae4e493f96eb8194ff5a1e77fb1",
+  "notes": "Registrazione alimenti semplificata: Focchy imposta automaticamente il tipo di peso coerente con l'alimento. Le opzioni prima/dopo cottura compaiono solo aprendo «Tipo di peso → Modifica». Cambiare i grammi non cancella più la base nutrizionale. Le scelte manuali sono ricordate per alimento sul dispositivo; i menu del nido conservano i riferimenti ufficiali, con avviso se si cambia la grammatura. Nessun pasto storico riscritto; quando i valori nutrizionali non sono comparabili Focchy mostra un totale parziale.",
   "mandatory": false,
-  "sourceRef": "83e3f8f7b49d277429ebdc5304cc0bc7ca8cd5a6",
-  "publishedAt": "2026-11-19T11:03:00Z"
+  "sourceRef": "e8d10d3439582b6fca922b1c5e08f8d32eb57ddd",
+  "publishedAt": "2026-11-19T14:02:45Z"
 }
