@@ -1,10 +1,10 @@
 {
-  "versionCode": 54,
-  "versionName": "0.15.12",
+  "versionCode": 55,
+  "versionName": "0.15.13",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "3d63173fb2caeeb492b4fbe180d39ca45cd001ce19c9597e430bd02e2295357d",
-  "notes": "Ragù di carne N115: quantità standard 20 g (Focchy, non ufficiale Roma 9–12). Calcolo nutrizionale stimato dai 74 g di ingredienti a crudo della ricetta ufficiale per Medi, escludendo la pastina: per 100 g 96,5 kcal, 5,16 g proteine, 2,54 g carboidrati, 7,29 g grassi, 0,79 g fibre; sale non determinabile. Per 20 g circa 19,3 kcal e 1,03 g di proteine. Dati indicati come stimati e non esatti: resa dopo cottura non misurata. Pasta e ragù restano voci distinte nei menu; altri pasti invariati.",
+  "sha256": "5203b565da2aabe66d26985fed456cfd4e78c56560ed78e6e329fbee34878eb3",
+  "notes": "Proteine: subito sotto il totale compare il contributo di ogni alimento (grammi e proteine), con indicazione degli alimenti esclusi e del motivo. Corretto il caso del 19 novembre: uovo e verdure fresche segnate erroneamente come 'peso secco' sono calcolate come peso prima della cottura senza modificare i dati salvati, segnalando l'interpretazione come indicativa. Il subtotale passa da 3,6 g a circa 10,6 g; frutta non identificata resta n.d. Nessuna modifica al menu di scelta dei pesi, da discutere separatamente.",
   "mandatory": false,
-  "sourceRef": "57e593927aeda513510bc2ffedd54a7034c08ab3",
-  "publishedAt": "2026-11-18T18:32:06Z"
+  "sourceRef": "83e3f8f7b49d277429ebdc5304cc0bc7ca8cd5a6",
+  "publishedAt": "2026-11-19T11:03:00Z"
 }
