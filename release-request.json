@@ -1,7 +1,7 @@
 {
-  "sourceRef": "83e3f8f7b49d277429ebdc5304cc0bc7ca8cd5a6",
-  "versionCode": 55,
-  "versionName": "0.15.13",
-  "notes": "Proteine: subito sotto il totale compare il contributo di ogni alimento (grammi e proteine), con indicazione degli alimenti esclusi e del motivo. Corretto il caso del 19 novembre: uovo e verdure fresche segnate erroneamente come 'peso secco' sono calcolate come peso prima della cottura senza modificare i dati salvati, segnalando l'interpretazione come indicativa. Il subtotale passa da 3,6 g a circa 10,6 g; frutta non identificata resta n.d. Nessuna modifica al menu di scelta dei pesi, da discutere separatamente.",
+  "sourceRef": "e8d10d3439582b6fca922b1c5e08f8d32eb57ddd",
+  "versionCode": 56,
+  "versionName": "0.15.14",
+  "notes": "Registrazione alimenti semplificata: Focchy imposta automaticamente il tipo di peso coerente con l'alimento. Le opzioni prima/dopo cottura compaiono solo aprendo «Tipo di peso → Modifica». Cambiare i grammi non cancella più la base nutrizionale. Le scelte manuali sono ricordate per alimento sul dispositivo; i menu del nido conservano i riferimenti ufficiali, con avviso se si cambia la grammatura. Nessun pasto storico riscritto; quando i valori nutrizionali non sono comparabili Focchy mostra un totale parziale.",
   "mandatory": false
 }
