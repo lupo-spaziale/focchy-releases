@@ -1,7 +1,7 @@
 {
-  "sourceRef": "2264fd6fbb8c44ef83e4c0691a5031e333b15305",
-  "versionCode": 57,
-  "versionName": "0.15.15",
-  "notes": "Alimenti base: aggiunto Kaki / cachi (freschi) in Frutta, da CREA 007090. Macronutrienti e micronutrienti verificati per 100 g di polpa edibile (70 kcal, 0,6 g proteine, 16 g carboidrati, 0,3 g lipidi, 2,5 g fibre, ferro 0,3 mg, calcio 8 mg, potassio 170 mg, vitamina C 23 mg). Porzione rapida Focchy 80 g, modificabile e non attribuita ufficialmente al nido. Nessun alimento duplicato o dato storico modificato.",
+  "sourceRef": "35957b175950e9aac9c89760d92f0cb3969d407a",
+  "versionCode": 58,
+  "versionName": "0.15.16",
+  "notes": "Risolto bug mini pancake: le porzioni registrate come 'servite' mantengono le proteine già calcolabili della ricetta, senza perderle dal totale e dal dettaglio giornaliero. Per 48 g di mini pancake del 20/11 il contributo è almeno 3,04 g (ricetta parziale: latte di mandorla e cannella non quantificati). Sistemati i pulsanti ½, 1 e 2 pezzi affinché usino il peso della porzione pronta. Nessuna modifica ai grammi e ai pasti già salvati. Restano inclusi i kaki della versione 0.15.15.",
   "mandatory": false
 }
