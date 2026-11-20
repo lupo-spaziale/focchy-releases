@@ -1,7 +1,7 @@
 {
-  "sourceRef": "e8d10d3439582b6fca922b1c5e08f8d32eb57ddd",
-  "versionCode": 56,
-  "versionName": "0.15.14",
-  "notes": "Registrazione alimenti semplificata: Focchy imposta automaticamente il tipo di peso coerente con l'alimento. Le opzioni prima/dopo cottura compaiono solo aprendo «Tipo di peso → Modifica». Cambiare i grammi non cancella più la base nutrizionale. Le scelte manuali sono ricordate per alimento sul dispositivo; i menu del nido conservano i riferimenti ufficiali, con avviso se si cambia la grammatura. Nessun pasto storico riscritto; quando i valori nutrizionali non sono comparabili Focchy mostra un totale parziale.",
+  "sourceRef": "2264fd6fbb8c44ef83e4c0691a5031e333b15305",
+  "versionCode": 57,
+  "versionName": "0.15.15",
+  "notes": "Alimenti base: aggiunto Kaki / cachi (freschi) in Frutta, da CREA 007090. Macronutrienti e micronutrienti verificati per 100 g di polpa edibile (70 kcal, 0,6 g proteine, 16 g carboidrati, 0,3 g lipidi, 2,5 g fibre, ferro 0,3 mg, calcio 8 mg, potassio 170 mg, vitamina C 23 mg). Porzione rapida Focchy 80 g, modificabile e non attribuita ufficialmente al nido. Nessun alimento duplicato o dato storico modificato.",
   "mandatory": false
 }
