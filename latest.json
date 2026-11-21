@@ -1,10 +1,10 @@
 {
-  "versionCode": 58,
-  "versionName": "0.15.16",
+  "versionCode": 59,
+  "versionName": "0.15.17",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "d777782a81c4e470d0641afc06266378390c8710df83e36f00c48b010fd5e04f",
-  "notes": "Risolto bug mini pancake: le porzioni registrate come 'servite' mantengono le proteine già calcolabili della ricetta, senza perderle dal totale e dal dettaglio giornaliero. Per 48 g di mini pancake del 20/11 il contributo è almeno 3,04 g (ricetta parziale: latte di mandorla e cannella non quantificati). Sistemati i pulsanti ½, 1 e 2 pezzi affinché usino il peso della porzione pronta. Nessuna modifica ai grammi e ai pasti già salvati. Restano inclusi i kaki della versione 0.15.15.",
+  "sha256": "ac4862efe16b4e33b20826f22ded3bd9e89da991691cbb023c339fb2fe63e4bf",
+  "notes": "In modalità Casa: due suggerimenti di pasto completo (pranzo e cena) con pastina sempre presente, verdure, una fonte proteica variata e olio EVO. La rotazione studia i pranzi e le cene degli ultimi 14 giorni, inclusi quelli del nido registrati, ed evita ripetizioni delle famiglie proteiche e delle verdure nello stesso giorno. Pulsante 'Altre proposte'; nessuna proposta per spuntini o merende. Grammi indicativi adattabili all'età, con attenzione ad allergie, glutine e sicurezza. I pasti suggeriti non vengono salvati automaticamente. Se selezioni Casa, i pasti importati automaticamente dal nido restano conservati ma non sono più conteggiati come realmente mangiati; correzioni manuali intatte. Il nido conserva la cena suggerita esistente.",
   "mandatory": false,
-  "sourceRef": "35957b175950e9aac9c89760d92f0cb3969d407a",
-  "publishedAt": "2026-11-20T16:00:52Z"
+  "sourceRef": "e6273a345d426ea19f6fbdc5ef953a25c1d40ecf",
+  "publishedAt": "2026-11-21T14:30:03Z"
 }
