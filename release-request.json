@@ -1,7 +1,7 @@
 {
-  "sourceRef": "e6273a345d426ea19f6fbdc5ef953a25c1d40ecf",
-  "versionCode": 59,
-  "versionName": "0.15.17",
-  "notes": "In modalità Casa: due suggerimenti di pasto completo (pranzo e cena) con pastina sempre presente, verdure, una fonte proteica variata e olio EVO. La rotazione studia i pranzi e le cene degli ultimi 14 giorni, inclusi quelli del nido registrati, ed evita ripetizioni delle famiglie proteiche e delle verdure nello stesso giorno. Pulsante 'Altre proposte'; nessuna proposta per spuntini o merende. Grammi indicativi adattabili all'età, con attenzione ad allergie, glutine e sicurezza. I pasti suggeriti non vengono salvati automaticamente. Se selezioni Casa, i pasti importati automaticamente dal nido restano conservati ma non sono più conteggiati come realmente mangiati; correzioni manuali intatte. Il nido conserva la cena suggerita esistente.",
+  "sourceRef": "cf5f9eb75464ca5dd58c08b70f81201031f81094",
+  "versionCode": 60,
+  "versionName": "0.15.18",
+  "notes": "Passato di verdure miste (cotto e frullato): completata la scheda base con riferimento CREA 905010, minestrone cotto. Per 100 g: 45 kcal, 2 g proteine, 7,8 g carboidrati, 0,4 g grassi, 2,1 g fibre. Quantità standard Focchy 150 g di passato cotto, modificabile: 67,5 kcal e circa 3 g di proteine. I valori sono INDICATIVI: proporzioni, ingredienti e diluizione del passato fatto in casa possono variare. Riferimento CREA con sedano e legumi; sale e micronutrienti non inventati. Stesso ID alimento di prima, nessun pasto storico modificato.",
   "mandatory": false
 }
