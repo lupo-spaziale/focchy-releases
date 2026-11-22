@@ -1,7 +1,7 @@
 {
-  "sourceRef": "cf5f9eb75464ca5dd58c08b70f81201031f81094",
-  "versionCode": 60,
-  "versionName": "0.15.18",
-  "notes": "Passato di verdure miste (cotto e frullato): completata la scheda base con riferimento CREA 905010, minestrone cotto. Per 100 g: 45 kcal, 2 g proteine, 7,8 g carboidrati, 0,4 g grassi, 2,1 g fibre. Quantità standard Focchy 150 g di passato cotto, modificabile: 67,5 kcal e circa 3 g di proteine. I valori sono INDICATIVI: proporzioni, ingredienti e diluizione del passato fatto in casa possono variare. Riferimento CREA con sedano e legumi; sale e micronutrienti non inventati. Stesso ID alimento di prima, nessun pasto storico modificato.",
+  "sourceRef": "535c753e7974faa069743d13822c85b2be8dbbc7",
+  "versionCode": 61,
+  "versionName": "0.15.19",
+  "notes": "Correzione fagioli N41: 12 g secchi calcolati con CREA 004100 (≈2,83 g proteine); fagioli cotti con CREA 004105. Pasti Casa e cene non usano più automaticamente le grammature secche del nido: default per fagioli cotti 35 g, sempre modificabile. Il PRI LARN è un riferimento del fabbisogno e non fa ridurre automaticamente la cena. Test di regressione per peso secco/cotto, riepilogo, modalità Casa/Nido. Nessun pasto storico o dato familiare riscritto: verifica i 12 g di fagioli già salvati per il 22/11, perché provengono dallo standard N41 del nido anche se era un giorno Casa.",
   "mandatory": false
 }
