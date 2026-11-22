@@ -1,10 +1,10 @@
 {
-  "versionCode": 61,
-  "versionName": "0.15.19",
+  "versionCode": 62,
+  "versionName": "0.15.20",
   "downloadUrl": "https://raw.githubusercontent.com/lupo-spaziale/focchy-releases/main/Focchy.apk",
-  "sha256": "76f0d020ad3bd524ce1189176fb751b807b00053a2b44c4a76538253928187c2",
-  "notes": "Correzione fagioli N41: 12 g secchi calcolati con CREA 004100 (≈2,83 g proteine); fagioli cotti con CREA 004105. Pasti Casa e cene non usano più automaticamente le grammature secche del nido: default per fagioli cotti 35 g, sempre modificabile. Il PRI LARN è un riferimento del fabbisogno e non fa ridurre automaticamente la cena. Test di regressione per peso secco/cotto, riepilogo, modalità Casa/Nido. Nessun pasto storico o dato familiare riscritto: verifica i 12 g di fagioli già salvati per il 22/11, perché provengono dallo standard N41 del nido anche se era un giorno Casa.",
+  "sha256": "bfdabf25d097937af0d9fd9c9d1a93d96fcc6463e9413c7f92466b633cf84cc5",
+  "notes": "Correzione Family sync: evita l'invio a Supabase di date vuote o impossibili che causavano l'errore PostgreSQL 'invalid input syntax for type date'. Il diario non crea più giornate senza data. Le giornate locali prive di data vengono preservate e non inviate; se contengono pasti, Focchy segnala sincronizzazione parziale e riporta il problema nella diagnostica, senza cancellare dati e senza segnare falsamente tutto sincronizzato. Test automatici della sincronizzazione tra due dispositivi e regressioni date superati.",
   "mandatory": false,
-  "sourceRef": "535c753e7974faa069743d13822c85b2be8dbbc7",
-  "publishedAt": "2026-11-22T19:21:15Z"
+  "sourceRef": "e608a31942053f6bcd31de0dc45e7e539424565f",
+  "publishedAt": "2026-11-22T19:30:52Z"
 }
