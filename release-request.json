@@ -1,7 +1,7 @@
 {
-  "sourceRef": "e608a31942053f6bcd31de0dc45e7e539424565f",
-  "versionCode": 62,
-  "versionName": "0.15.20",
-  "notes": "Correzione Family sync: evita l'invio a Supabase di date vuote o impossibili che causavano l'errore PostgreSQL 'invalid input syntax for type date'. Il diario non crea più giornate senza data. Le giornate locali prive di data vengono preservate e non inviate; se contengono pasti, Focchy segnala sincronizzazione parziale e riporta il problema nella diagnostica, senza cancellare dati e senza segnare falsamente tutto sincronizzato. Test automatici della sincronizzazione tra due dispositivi e regressioni date superati.",
+  "sourceRef": "2e8caba400953eb3fa863abe39a847d4b10ccdd7",
+  "versionCode": 63,
+  "versionName": "0.15.21",
+  "notes": "Allineamento dicembre Municipio VII: Focchy rilegge da MESIS 15 giorni scolastici dall'1 al 22 dicembre 2026, escludendo l'8 dicembre e la chiusura natalizia dal 23. Menu Nido medi, grammature 9–12 del ricettario quando disponibili, altrimenti indicazioni Focchy etichettate. Riconosciuti spinaci, fagiolini, platessa, limanda, piatti misti e merende; per latte/cereali non specificati non si inventano dosi o tipo. Riferimenti CREA 005705 e 004325 per verdure bollite, parmigiano condimento 3 g indicativi (non 10 g di N46). Piatti composti classificati parziali; rettifica esclusivamente porzioni future non modificate, preservando quantità manuali e storico; segnaposto futuri obsoleti ritirati con tombstone. Aggiunto pulsante Allinea dicembre 2026.",
   "mandatory": false
 }
